@@ -1,4 +1,4 @@
-'use strict';
+/*'use strict';
 var userName = prompt('Кто пришел?', '');
 
 if (userName == 'Админ') {
@@ -18,7 +18,7 @@ if (userName == 'Админ') {
 
 } else{
     alert('Я вас не знаю');
-}
+}*/
 
 
 
