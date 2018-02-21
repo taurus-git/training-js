@@ -10,15 +10,16 @@ if (age >= 14 && age <= 90) {
     alert('false');
 }*/
 
+/*
 var age = prompt('Введите число меньше 14 и ли больше 90', '');
 //1
-/*if (age < 14 || age > 90){
+/!*if (age < 14 || age > 90){
     alert('true');
 }else {
     alert('false');
-}*/
+}*!/
 //2
 if (!(age >= 14 && age <= 90)) {
     alert('true');
 } else
-    alert('false');
+    alert('false');*/
