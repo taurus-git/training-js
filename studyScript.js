@@ -35,3 +35,59 @@ nextPrime:
 
         alert (i);
     }*/
+
+//task switch
+/*switch (browser) {
+    case 'IE':
+        alert( 'О, да у вас IE!' );
+        break;
+
+    case 'Chrome':
+    case 'Firefox':
+    case 'Safari':
+    case 'Opera':
+        alert( 'Да, и эти браузеры мы поддерживаем' );
+        break;
+
+    default:
+        alert( 'Мы надеемся, что и в вашем браузере все ок!' );
+}*/
+//decision switch - > if
+/*
+var browser = prompt('Название Вашего браузера?', '');
+
+if (browser == 'IE') {
+    alert('Да у Вас IE!');
+} else if (browser == 'Chrome'
+    || browser == 'Firefox'
+    || browser == 'Safari'
+    || browser == 'Opera') {
+    alert('Да, эти браузеры мы поддерживаем');
+} else {
+    alert('Мы надеемся, что в  Вашем браузере все ок!');
+}
+*/
+
+//task
+//if -> switch
+var a = +prompt('a?', '');
+
+if (a == 0) {
+    alert( 0 );
+}
+if (a == 1) {
+    alert( 1 );
+}
+
+if (a == 2 || a == 3) {
+    alert( '2,3' );
+}
+
+
+
+
+
+
+
+
+
