@@ -103,11 +103,54 @@ switch(a) {
         break;
 }
 */
+//task
+// if -> to ? or ||
+/*function checkAge(age) {
+    if (age > 18) {
+        return true;
+    } else {
+        return confirm('Родители разрешили?');
+    }
+}*/
+//decision
+//with ?
+/*function checkAge(age) {
+    return (age > 18) ? true : confirm('Родители разрешили?');
+}*/
+//with ||
+/*
+function checkAge(age) {
+    return age > 18 || confirm('Родители разрешили?');
+}
+*/
 
+//task
+//min number
+//1. min(2, 5) == 2
+/*//decision 1
+function calcMinNumber(a, b) {
+    if (a > b) {
+        return b;
+    } else if (a < b) {
+        return a;
+    } else if (a == b) {
+        return a;
+    }
+}
+ var checkMinNumber = calcMinNumber(1, 1);
+alert(checkMinNumber);
+//decision 2{
 
+function calcMinNumber(a, b){
+    if (a < b) {
+        return a;
+    } else {
+        return b;
+    }
+}
 
-
-
-
-
+//decision 3
+function calcMinNumber(a, b){
+   return a < b ? a : b;
+}*/
 
