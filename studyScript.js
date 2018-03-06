@@ -176,11 +176,67 @@ if (n <= 1) {
     alert ( pow(x,n) );*/
 //task
 //recursion
-function pow(x,n) {
+/*function pow(x,n) {
     if (n != 1) {
         return x *= pow(x,n - 1);
     } else {
         return x;
     }
 }
-alert( pow(2,3));
+alert( pow(2,3));*/
+
+//task
+//factorial
+//my decinicion
+/*
+function factorial(n) {
+    if (n == 1) return 1;
+    return n * factorial(n - 1);
+}
+
+alert( factorial(5) );
+*/
+//two decinitions from javascript.ru
+//first
+/*function factorial(n) {
+    return (n != 1) ? n * factorial(n -1) : 1;
+}
+
+alert( factorial(5) );*/
+//second
+/*
+function factorial(n) {
+    return n ? n * factorial(n - 1) : 1;
+}
+
+alert( factorial(5) );*/
+//task
+//Fibonacci number
+//1 decition - recursion
+/*function fib(n) {
+    return n <= 1 ? n : fib(n - 1) + fib( n - 2);
+}
+
+alert( fib(3) );
+alert( fib(7) );
+//alert( fib(77) );*/
+//2 decision - cycle
+/*
+function fib(n){
+    var a = 1,
+        b = 1;
+    for (var i =3; i <= n; i++) {
+        var c = a + b;
+        a = b;
+        b = c;
+    }
+    return b;
+}
+
+
+alert( fib(3) );
+alert( fib(7) );
+alert( fib(77) );
+*/
+
+
