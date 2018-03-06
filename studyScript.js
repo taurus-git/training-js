@@ -184,7 +184,48 @@ if (n <= 1) {
     }
 }
 alert( pow(2,3));*/
+//task
+//recursion
+//sum to
+//1.recursion
+//my decision
+/*function sumTo (n) {
+    if (n > 1) {
+        return n + sumTo(n-1);
+    } else {
+        return n;
+    }
+}
 
+alert( sumTo(100));*/
+
+//--or--
+//js.ru decision
+/*function sumTo(n) {
+    if (n == 1) return 1;
+    return n + sumTo(n - 1);
+}
+
+alert (sumTo(100));*/
+
+
+//2.cycle
+
+/*function sumTo(n) {
+    var sum = 0;
+    for (var i = 1; i <= n; i++) {
+        sum += i;
+    }
+    return sum;
+}
+alert ( sumTo(100) );*/
+
+//3.arithmetic progression
+/*function sumTo(n) {
+    return n * (n + 1) / 2;
+}
+
+alert( sumTo(100) );*/
 //task
 //factorial
 //my decinicion
