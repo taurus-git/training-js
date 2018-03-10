@@ -279,5 +279,85 @@ alert( fib(3) );
 alert( fib(7) );
 alert( fib(77) );
 */
+//task - 1. udemy
+/*john and a friend invented a simple game where the player with the highest value of his height plus five times his age wins (what a silly game) 1.Create variables for the heighest and ages of two friends and assign them some values 2. calculate their scores 3. Decide who wins and print the winner to the console. Include the scope in the string that you output to the console. Dont forget that there can be a draw (both players with the same score) 4. Extra: add a third player and now decide who wins. Hint: You will need the && operator to take the decision. If you cant solve this one, just watch the solution, it's no problem*/
+//decision
+//3 players
+/*
+var firstHeight = prompt('First player! Your height', '');
+var firstAge = prompt('First player! Your age', '');
+var firstResult = +firstHeight + +(firstAge * 5);
+
+var secondHeight = prompt('Second player! Your height', '');
+var secondAge = prompt('Second player! Your age', '');
+var secondResult = +secondHeight + +(secondAge * 5);
+
+var thirdHeight = prompt('Third player! Your height', '');
+var thirdAge = prompt('Third player! Your age', '');
+var thirdResult = +thirdHeight + +(thirdAge * 5);
+
+if (firstResult > secondResult && firstResult > thirdResult){
+    console.log('First result is win! Because ' + firstResult + ' is more then ' + secondResult + ' and ' + thirdResult);
+} else if (secondResult > firstResult && secondResult > thirdResult){
+    console.log ('Second result is win! Because ' + secondResult + ' is more then ' + firstResult + ' and ' + thirdResult);
+} else if (thirdResult > firstResult && thirdResult > secondResult){
+    console.log ('Third result is win! Because ' + thirdResult + ' is more then ' + firstResult + ' and ' + secondResult);
+} else
+    console.log ('No one won because players have same data');*/
+
+//task - 2. udemy
+//Years until retirement
+/*function calculateAge(yearOfBirth) {
+    var age = 2018 - yearOfBirth;
+    return age;
+}
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1969);
+var ageMary = calculateAge(1948);
+//console.log(ageJohn);
+//console.log(ageMike);
+//console.log(ageMary);
+
+
+function yearsUntilretirement(name, year){
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+
+    if (retirement >= 0){
+        console.log(name + ' retires in ' + retirement + ' years.');
+    } else {
+        console.log(name + ' is already retired.');
+    }
+
+}
+yearsUntilretirement('John', 1990);
+yearsUntilretirement('Mike', 1969);
+yearsUntilretirement('Mary', 1948);*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
