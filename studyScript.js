@@ -333,6 +333,26 @@ function yearsUntilretirement(name, year){
 yearsUntilretirement('John', 1990);
 yearsUntilretirement('Mike', 1969);
 yearsUntilretirement('Mary', 1948);*/
+//testing with chai and mocha
+/*
+describe('любое число кроме нуля в степени 0 равно 1', function(){
+
+    function makeTest(x) {
+    it('при возведении ' + x + ' в степень 0 результат: 1' , function() {
+     assert.equal(pow(x, 0), 1);
+    });
+    }
+
+    for (var x = -5; x <= 5; x+= 2) {
+        makeTest(x);
+    }
+
+
+    it('ноль в степени 0 равно NaN', function() {
+        assert( isNaN(pow(0, 0));
+    });
+
+});*/
 
 
 
