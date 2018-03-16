@@ -353,13 +353,44 @@ describe('любое число кроме нуля в степени 0 равн
     });
 
 });*/
+//task
+//numbers
+//first task
+//my decinition
+/*
+function sum (firstNum, secondNum) {
+    var firstNum = prompt('Введите первое слагаемое', '');
+    var secondNum = prompt('Введите второе слагаемое', '');
+    var calculateSum = (+firstNum + +secondNum);
+    return calculateSum;
+}
 
+alert (sum());*/
+//decinition by js.ru
+/*var a = +prompt('Введите первое число', '');
+var b = +prompt('Введите второе число', '');
 
+alert (a + b);*/
 
+//second task
+/*var price1 = 0.1;
+var price2 = 0.2;
+alert( +(price1 + price2).toFixed(2) );*/
+//third task
+//decision from js.ru
+/*
+function getDecimal(num) {
+    var str = "" + num;
+    var zeroPos = str.indexOf(".");
+    if (zeroPos == -1) return 0;
+    str = str.slice(zeroPos);
+    return +str;
+}
 
-
-
-
+alert( getDecimal(12.345) ); // 0.345
+alert( getDecimal(1.2) ); // 0.2
+alert( getDecimal(-1.2) ); // 0.2
+*/
 
 
 
