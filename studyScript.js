@@ -353,18 +353,86 @@ describe('любое число кроме нуля в степени 0 равн
     });
 
 });*/
+//task
+//numbers
+//first task
+//my decinition
+/*
+function sum (firstNum, secondNum) {
+    var firstNum = prompt('Введите первое слагаемое', '');
+    var secondNum = prompt('Введите второе слагаемое', '');
+    var calculateSum = (+firstNum + +secondNum);
+    return calculateSum;
+}
 
+alert (sum());*/
+//decinition by js.ru
+/*var a = +prompt('Введите первое число', '');
+var b = +prompt('Введите второе число', '');
 
+alert (a + b);*/
 
+//second task
+/*var price1 = 0.1;
+var price2 = 0.2;
+alert( +(price1 + price2).toFixed(2) );*/
+//third task
+//decision from js.ru
+/*
+function getDecimal(num) {
+    var str = "" + num;
+    var zeroPos = str.indexOf(".");
+    if (zeroPos == -1) return 0;
+    str = str.slice(zeroPos);
+    return +str;
+}
 
+alert( getDecimal(12.345) ); // 0.345
+alert( getDecimal(1.2) ); // 0.2
+alert( getDecimal(-1.2) ); // 0.2
+*/
+//task
+//random num 0 - 10
+/*var max = 10;
 
+alert (Math.random() * max);*/
 
+//task
+//random min - max
+/*var min = 5,
+    max = 100;
 
+alert (min + Math.random() * (max - min));*/
 
+//task
+//random integer num.
+//my decinition (Help - https://www.w3schools.com/js/js_random.asp)
+/*function randomInteger(min, max) {
+    var rand = Math.floor(Math.random() * (max + 1 - min) ) + min;
+    return rand;
+}
 
+alert( randomInteger(1, 100) );*/
+//decinitions by js.ru
+//1. floor
+/*
+function randomInteger(min, max) {
+    var rand = min + Math.random() * (max + 1 - min);
+    rand = Math.floor(rand)
+    return rand;
+}
 
+alert( randomInteger(3, 100));
+*/
+//2.round
+//random num Math.round(random from min-0.5 to max+0.5)
+/*function randomInteger(min, max) {
+    var rand = min - 0.5 + Math.random() * (max - min + 1)
+    rand = Math.round(rand);
+    return rand;
+}
 
-
+alert( randomInteger(3, 100) );*/
 
 
 
