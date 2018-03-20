@@ -403,7 +403,7 @@ alert (Math.random() * max);*/
     max = 100;
 
 alert (min + Math.random() * (max - min));*/
-alert( getDecimal(12.345) ); // 0.345
+/*alert( getDecimal(12.345) ); // 0.345
 alert( getDecimal(1.2) ); // 0.2
 alert( getDecimal(-1.2) ); // 0.2
 */
