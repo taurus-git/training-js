@@ -356,7 +356,7 @@ describe('любое число кроме нуля в степени 0 равн
 //task
 //numbers
 //first task
-//my decinition
+//my decision
 /*
 function sum (firstNum, secondNum) {
     var firstNum = prompt('Введите первое слагаемое', '');
@@ -366,7 +366,7 @@ function sum (firstNum, secondNum) {
 }
 
 alert (sum());*/
-//decinition by js.ru
+//decision by js.ru
 /*var a = +prompt('Введите первое число', '');
 var b = +prompt('Введите второе число', '');
 
@@ -410,14 +410,14 @@ alert( getDecimal(-1.2) ); // 0.2
 
 //task
 //random integer num.
-//my decinition (Help - https://www.w3schools.com/js/js_random.asp)
+//my decision (Help - https://www.w3schools.com/js/js_random.asp)
 /*function randomInteger(min, max) {
     var rand = Math.floor(Math.random() * (max + 1 - min) ) + min;
     return rand;
 }
 
 alert( randomInteger(1, 100) );*/
-//decinitions by js.ru
+//decisions by js.ru
 //1. floor
 /*
 function randomInteger(min, max) {
@@ -438,11 +438,31 @@ alert( randomInteger(3, 100));
 
 alert( randomInteger(3, 100) );*/
 
+//task
+//first symbol to upper case
+//my decision
 
+/*function ucFirst(str){
+    var str = prompt('Type the word to upper case first letter', 'name');
+    str = ( str.charAt(0).toUpperCase() + str.slice(1));
+    return str;
+}
 
+alert (ucFirst());*/
+//task
+//check spam
+function checkSpam(str) {
+    var str = prompt( 'Alert spam for words: "viagra" and "XXX"', 'viagra' );
+    if (~str.indexOf('viagra')){
+        alert( 'true' );
+    } else if (~str.indexOf('XXX')){
+        alert( 'true' );
+    } else
+        alert( 'false' );
 
+}
 
-
+alert ( checkSpam() );
 
 
 
