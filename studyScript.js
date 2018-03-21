@@ -451,25 +451,49 @@ alert( randomInteger(3, 100) );*/
 alert (ucFirst());*/
 //task
 //check spam
-function checkSpam(str) {
-    var str = prompt( 'Alert spam for words: "viagra" and "XXX"', 'viagra' );
-    if (~str.indexOf('viagra')){
-        alert( 'true' );
-    } else if (~str.indexOf('XXX')){
-        alert( 'true' );
-    } else
-        alert( 'false' );
+/*function checkSpam(str) {
+    var lowerStr = str.toLowerCase();
+
+    return !!(~lowerStr.indexOf('viagra') || ~lowerStr.indexOf('xxx'));
 
 }
+alert( checkSpam('buy ViAgRA now') );
+alert( checkSpam('free xxxxx') );
+alert( checkSpam("innocent rabbit") );*/
+//task
+//truncate a srting
+//my decision
+/*
+function truncate(str, maxLenght){
+  var strLength = str.length;
 
-alert ( checkSpam() );
+    if (strLength > 17){
+        return (str = (str.slice(0, 17) + ('...')));
+    } else {
+        return str;
+    }
+}
 
+alert ( truncate('Вот, что мне хотелось бы сказать на эту тему:', 20) );
+alert ( truncate('Всем привет!', 20));
+*/
+//1. decision by js.ru:
+/*function truncate(str, maxLength) {
+    if(str.length > maxLength){
+        return str.slice(0, maxLength - 3) + '...';
+    }
 
+    return str;
+}
+alert( truncate("Вот, что мне хотелось бы сказать на эту тему:", 20) );
+alert( truncate("Всем привет!", 20) );*/
+//2. decision by js.ru
+/*function truncate(str, maxLength) {
+    return (str.length > maxLength) ? str.slice(0, maxLength - 3) + '...' : str;
+}
 
-
-
-
-
+alert( truncate("Вот, что мне хотелось бы сказать на эту тему:", 20) );
+alert( truncate("Всем привет!", 20) );*/
 
 
 
