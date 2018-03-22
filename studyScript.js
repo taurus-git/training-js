@@ -495,5 +495,21 @@ alert( truncate("Всем привет!", 20) );*/
 alert( truncate("Вот, что мне хотелось бы сказать на эту тему:", 20) );
 alert( truncate("Всем привет!", 20) );*/
 
+//task
+//getting started with objects
+//my decision
+/*var user = {
+    name: 'Вася',
+    surname: 'Петров',
+    name: 'Сергей'
+};
+delete user.name;
 
+alert (user.name + ' ' + user.surname);
+//decision by js.ru:
+var user = {};
+user.name = 'Вася';
+user.surname = 'Петров';
+user.name = 'Сергей';
+delete user.name;*/
 
