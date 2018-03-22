@@ -502,33 +502,6 @@ alert( truncate("Всем привет!", 20) );*/
 
 alert( extractCurrencyValue('$120') );*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //task
 //getting started with objects
 //my decision
@@ -546,4 +519,69 @@ user.name = 'Вася';
 user.surname = 'Петров';
 user.name = 'Сергей';
 delete user.name;*/
+
+//task
+//my decision
+/*var schedule = {};
+schedule['8:30'] = 'подъём';
+
+function isEmpty(obj) {
+
+    var counter = 0;
+    for (var key in schedule) {
+        counter++;
+    }
+
+    if (counter > 0){
+        return false;
+    }
+}
+alert( isEmpty() );*/
+//decision by js.ru + my improvements
+
+/*var schedule = {};
+
+//alert( isEmpty(schedule) ); //true
+
+schedule['8:30'] = 'подъём';
+
+//alert( isEmpty(schedule) ); //false
+
+function isEmpty(obj) {
+ for (var key in schedule) {
+     return false;
+ }
+ return true;
+}
+alert( isEmpty() );*/
+//task
+/*var salaries = {
+  'Вася': 100,
+  'Петя': 300,
+  'Даша': 250
+};
+
+var sum = 0;
+for (var name in salaries) {
+    sum += salaries[name];
+}
+
+alert( sum );*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
