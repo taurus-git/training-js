@@ -494,6 +494,40 @@ alert( truncate("Всем привет!", 20) );*/
 
 alert( truncate("Вот, что мне хотелось бы сказать на эту тему:", 20) );
 alert( truncate("Всем привет!", 20) );*/
+//task
+//extract num from price
+/*function extractCurrencyValue(str) {
+    return +str.slice(1);
+}
+
+alert( extractCurrencyValue('$120') );*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
