@@ -608,12 +608,22 @@ function multiplyNumeric(obj) {
 multiplyNumeric(menu);
 
 alert( 'menu.width=' + menu.width + ' height=' + menu.height + ' title=' + menu.title);*/
+//Arrays
+//task
+//the last value in the array
+/*var goods = [0, 1, 2, 3, 4, "key", "simple text"];
+var lastItem = goods[goods.length - 1];
 
+alert (lastItem);*/
+//task
+//add the last element to the array
+/*var goods = [1, 5, "key", true, 'lorem ipsum'];
 
+//goods.push("Компьютер");
+goods[goods.length] = "Компьютер";
 
-
-
-
+alert(goods);*/
+//task
 
 
 
