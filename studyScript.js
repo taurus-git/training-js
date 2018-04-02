@@ -631,10 +631,32 @@ styles.push('Рок-н-Ролл');
 styles[styles.length - 2] = 'Классика';
 alert ( styles.shift() );
 styles.unshift( 'Рэп', 'Регги' );*/
+//task
+//random num
+//my decision
+/*var arr = ['Яблоко', 'Апельсин', 'Груша', 'Лимон'];
+var min = 0;
+var max = arr.length;
+var rand = min + Math.floor(Math.random() * (max + 1 - min));
 
+alert( arr[rand] );*/
+//decision by js.ru
+/*var arr = ['Яблоко', 'Апельсин', 'Груша', 'Лимон'];
 
+var rand = Math.floor(Math.random() * arr.length);
+alert( arr[rand] );*/
+//task
+//calculator
+var arr = []; // create new array
 
+function sum() {
+    var newNum = prompt('Введите любое число для сложения', '');
+    return newNum;
+};
 
+arr.push( sum() ); // add value to the end
+
+alert ( arr );
 
 
 
