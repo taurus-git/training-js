@@ -647,17 +647,23 @@ var rand = Math.floor(Math.random() * arr.length);
 alert( arr[rand] );*/
 //task
 //calculator
-var arr = []; // create new array
+/*var numbers = [];
 
-function sum() {
-    var newNum = prompt('Введите любое число для сложения', '');
-    return newNum;
-};
+while (true) {
 
-arr.push( sum() ); // add value to the end
+    var value = prompt('Введите число', 0);
 
-alert ( arr );
+    if (value === '' || value === null || isNaN(value)) break;
 
+    numbers.push(+value);
+}
+
+var sum = 0;
+for (var i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+}
+
+alert( sum );*/
 
 
 
