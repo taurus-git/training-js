@@ -667,7 +667,7 @@ alert( sum );*/
 
 //---------------repeat--------------
 //task
-//1.decision
+//1.decision. while
 /*
 var symb = "#";
 var repeat = 0;
@@ -678,7 +678,7 @@ while (repeat < 7){
     ++repeat;
 }
 */
-//2.decision
+//2.decision. do - while
 /*var symb = "#";
 var repeat = 0;
 
@@ -687,18 +687,33 @@ do {
     symb += "#";
     repeat++;
 } while (repeat < 7);*/
-//3.decision
-var repeat = 7;
+//3.decision. while, repeat--
+/*var repeat = 7;
 var symb = "#";
 
 while (repeat) { //выполняется, пока repeat true (не "0")
     console.log(symb);
     symb += "#";
     repeat--;
+}*/
+//4.decision. function
+/*var symb = "#";
+
+function symbFigure() {
+    for (var i = 0; i <= 7; i++) {
+        console.log(symb);
+        symb += "#";
+    }
 }
-//4.function
+console.log(symbFigure());*/
+//task
+//counter with exceptions
+for (var counter = 100; ; counter--) {
+    if (counter % 3 == 0);
 
+}
 
+console.log(counter)
 
 
 
