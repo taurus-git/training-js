@@ -665,6 +665,39 @@ for (var i = 0; i < numbers.length; i++) {
 
 alert( sum );*/
 
+//---------------repeat--------------
+//task
+//1.decision
+/*
+var symb = "#";
+var repeat = 0;
+
+while (repeat < 7){
+    console.log(symb);
+    symb += "#";
+    ++repeat;
+}
+*/
+//2.decision
+/*var symb = "#";
+var repeat = 0;
+
+do {
+    console.log(symb);
+    symb += "#";
+    repeat++;
+} while (repeat < 7);*/
+//3.decision
+var repeat = 7;
+var symb = "#";
+
+while (repeat) { //выполняется, пока repeat true (не "0")
+    console.log(symb);
+    symb += "#";
+    repeat--;
+}
+//4.function
+
 
 
 
