@@ -706,14 +706,45 @@ function symbFigure() {
     }
 }
 console.log(symbFigure());*/
+//decision by eloquentjavascript.net
+/*for (var line = "#"; line.length < 8; line += "#")
+    console.log(line);*/
+
 //task
 //counter with exceptions
-for (var counter = 100; ; counter--) {
-    if (counter % 3 == 0);
+//my decision
+/*
+var counter;
 
+for (var i = 1; i < 100; i++) {
+    if ( (i % 3 == 0) && (i % 5 == 0) )
+        console.log(counter = "FizzBuzz");
+    else if (i % 3 == 0)
+        console.log(counter = "Fizz");
+    else if ( (i % 5 == 0) && (i % 3 != 0) )
+        console.log(counter = "Buzz");
+    else
+        console.log(i);
 }
+*/
+//decision by eloquentjavascript.net
+/*for (var n = 1; n<= 100; n++) {
+    var output = "";
+    if (n % 3 == 0)
+        output += "Fizz";
+    if (n % 5 == 0)
+        output += "Buzz";
+    console.log(output || n);
+}*/
+//task
+//chess board
+//" " - whitespase
+/*for ( var = 0; i = 7; i++){
 
-console.log(counter)
+}*/
+
+
+
 
 
 
