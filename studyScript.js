@@ -728,7 +728,7 @@ for (var i = 1; i < 100; i++) {
 }
 */
 //decision by eloquentjavascript.net
-/*for (var n = 1; n<= 100; n++) {
+/*for (var n = 1; n <= 100; n++) {
     var output = "";
     if (n % 3 == 0)
         output += "Fizz";
@@ -739,14 +739,42 @@ for (var i = 1; i < 100; i++) {
 //task
 //chess board
 //" " - whitespase
-/*for ( var = 0; i = 7; i++){
 
-}*/
+//task
+//min num
+//1. decision. if - else
+/*function min(a, b) {
+    if (a > b)
+        return b;
+    else
+        return a;
+}
 
+console.log(min(0, 10));
+console.log(min(0, -10));*/
 
+//2.decision. ?
+/*function min(a, b) {
+    return a > b ?  b : a;
+}
+console.log(min(0, 10));
+console.log(min(0, -10));*/
 
+//3.decision with prompt
+/*
+var a = +prompt("Введите первое число", "");
+var b = +prompt("Введите второе число", "");
 
+function min(a, b){
+  if (a < b) {
+      alert( "Вы сравнивали два числа: " + a + " и " + b + ".\nНаименьшее: " + a);
+  } else {
+      alert( "Вы сравнивали два числа: " + a + " и " + b + ".\nНаименьшее: " + b);
+  }
+};
 
+min(a, b);
+*/
 
 
 
