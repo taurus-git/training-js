@@ -776,6 +776,60 @@ function min(a, b){
 min(a, b);
 */
 
+//task
+//recursion
+/*
+function isEven( n ){
+   if ( n == 0){
+      return true;
+   } else if (n == 1){
+       return false;
+   } else if (n < 0){
+       return isEven( -n );
+   } else
+       return isEven(n - 2);
+};
+
+console.log(isEven(0));
+console.log(isEven(50));
+console.log(isEven(75));
+console.log(isEven(-1));*/
+
+//task
+//find symb
+var line = prompt("Введите любое слово", "ВиВальди");
+var find = "В"; //cirrilic
+
+function countBs(line){
+    for(var i = 0; i < line.length; i++ ){
+        if(line.charAt() == find){
+            var result = "" + find;
+            return result.length;
+        } else
+            return ("Искомая буква не найдена")
+
+    }
+};
+
+console.log(countBs("BBC"));
+// → 2
+//console.log(countChar("kakkerlak", "k"));
+// → 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
