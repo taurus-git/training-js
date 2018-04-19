@@ -797,24 +797,23 @@ console.log(isEven(-1));*/
 
 //task
 //find symb
-var line = prompt("Введите любое слово", "ВиВальди");
-var find = "В"; //cirrilic
-
-function countBs(line){
-    for(var i = 0; i < line.length; i++ ){
-        if(line.charAt() == find){
-            var result = "" + find;
-            return result.length;
-        } else
-            return ("Искомая буква не найдена")
-
-    }
+/*function countChar(line, find){
+    var count = 0;
+    for( var i = 0; i < line.length; i++ ){
+        if (line.charAt(i) == find)
+        count += 1;}
+    return count;
 };
 
-console.log(countBs("BBC"));
-// → 2
-//console.log(countChar("kakkerlak", "k"));
+function countBs(line) {
+    return countChar(line, "В");
+}
+
+console.log(countChar("kakkerlak", "k"));
 // → 4
+console.log(countBs("ВиВальди", "В"));
+// → 2*/
+
 
 
 
