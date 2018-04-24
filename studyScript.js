@@ -814,14 +814,54 @@ console.log(countChar("kakkerlak", "k"));
 console.log(countBs("ВиВальди", "В"));
 // → 2*/
 
+//task
+//sum(a)(b) = a+b
+//my decision
+/*function sum(a) {
+    var a, b;
+
+    var func = function(b) { alert(a + b); };
+
+    return func;
+}*/
+//decision by js.ru
+/*function sum(a) {
+
+    return function(b) {
+        return a + b;
+    };
+};
 
 
+alert( sum(1)(2) );
+alert( sum(5)(-1) );*/
 
+//task
+/*function makeBuffer() {
+    var text = '';
 
+    return function (piece) {
+        if (arguments.length == 0) {
+            return text;
+        }
+        text +=piece;
+    };
+};
 
+var buffer = makeBuffer();
 
+buffer('Замыкания');
+buffer(' Использовать');
+buffer(' Нужно!');
 
+alert( buffer() );
 
+var buffer2 = makeBuffer();
+buffer2(0);
+buffer2(1);
+buffer2(0);
+
+alert( buffer2() );*/
 
 
 
