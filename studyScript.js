@@ -863,6 +863,41 @@ buffer2(0);
 
 alert( buffer2() );*/
 
+//task
+//buffer with clear
+
+/*function makeBuffer() {
+    var text = '';
+
+    function buffer(piece) {
+        if (arguments.length == 0) {
+            return text;
+        }
+        text += piece;
+    }
+
+    buffer.clear = function () {
+        text = '';
+    };
+
+    return buffer;
+}
+
+var buffer = makeBuffer();
+
+buffer('Тест');
+buffer(' тебя не съест ');
+alert( buffer() );
+
+buffer.clear();
+
+alert( buffer() );*/
+
+//task
+//sorting
+
+
+
 
 
 
