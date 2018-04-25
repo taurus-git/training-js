@@ -897,11 +897,163 @@ alert( buffer() );*/
 //sorting
 
 
+//task
+//Filtering through the function
+/*function filter(arr, func) {
+    var result = [];
 
+    for (var i = 0; i < arr.length; i++) {
+        var val = arr[i];
+        if (func(val)) {
+            result.push(val);
+        }
+    }
 
+    return result;
+}
 
+var arr = [1, 2, 3, 4, 5, 6, 7];
 
+alert (filter(arr, function(a) {
+    return a % 2 == 0;
+}));*/
 
+//filter inBetween
+
+/*function filter(arr, func) {
+    var result = [];
+
+    for (var i = 0; i < arr.length; i++) {
+        var val = arr[i];
+        if (func(val)) {
+            result.push(val);
+        }
+    }
+
+    return result;
+}
+
+function inBetween(a, b) {
+    return function(x) {
+        return x >= a && x <= b;
+    };
+}
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+alert( filter(arr, inBetween(3, 6)) );*/
+
+//filter inArray
+/*function filter(arr, func) {
+    var result = [];
+
+    for (var i= 0; i < arr.length; i++) {
+        var val = arr[i];
+        if (func(val)) {
+            result.push(val);
+        }
+    }
+
+    return result;
+}
+
+function inArray(arr) {
+    return function(x) {
+        return arr.indexOf(x) != -1;
+    };
+}
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+alert( filter(arr, inArray([1, 2, 10])) );*/
+
+//task
+//shooters
+/*function makeArmy() {
+
+    var shooters = [];
+
+    for (var i = 0; i < 10; i++) {
+        var shooter = function() {
+            alert( i );
+        };
+        shooters.push(shooter);
+    }
+
+    return shooters;
+}
+
+var army = makeArmy();
+
+army[0]();
+army[5]();
+//1.decision by js.ru
+function makeArmy() {
+
+    var shooters = [];
+
+    for (var i = 0; i < 10; i++) {
+
+        var shooter = function me() {
+            alert( me.i );
+        };
+        shooter.i = i;
+
+        shooters.push(shooter);
+    }
+
+    return shooters;
+}
+
+var army = makeArmy();
+
+army[0](); // 0
+army[1](); // 1
+//2.decision by js.ru
+function makeArmy() {
+
+    var shooters = [];
+
+    for (var i = 0; i < 10; i++) {
+
+        var shooter = (function(x) {
+
+            return function() {
+                alert( x );
+            };
+
+        })(i);
+
+        shooters.push(shooter);
+    }
+
+    return shooters;
+}
+
+var army = makeArmy();
+
+army[0](); // 0
+army[1](); // 1
+//3.decision by js.ru
+function makeArmy() {
+
+    var shooters = [];
+
+    for (var i = 0; i < 10; i++)(function(i) {
+
+        var shooter = function() {
+            alert( i );
+        };
+
+        shooters.push(shooter);
+
+    })(i);
+
+    return shooters;
+}
+
+var army = makeArmy();
+
+army[0](); // 0
+army[1](); // 1*/
 
 
 
