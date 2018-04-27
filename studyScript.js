@@ -1055,7 +1055,24 @@ var army = makeArmy();
 army[0](); // 0
 army[1](); // 1*/
 
+//task
+//calculator. methods, prompt
+var a, b;
 
+var calculator = {
+    read: function () {
+        a = +prompt( 'a?', '5' );
+        b = +prompt( 'b?', '7' );
+    },
+    sum: function () {
+        alert (a + b);
+    }
+
+}
+
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() );
 
 
 
