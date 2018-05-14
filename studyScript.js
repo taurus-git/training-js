@@ -922,7 +922,7 @@ alert( filter(arr, inArray([1, 2, 10])) );
 */
 //task
 //decision by js.ru
-function sum(a) {
+/*function sum(a) {
 
     var currentSum = a;
 
@@ -941,7 +941,125 @@ function sum(a) {
 console.log( sum(1)(2) ); // 3
 console.log( sum(5)(-1)(2) ); // 6
 console.log( sum(6)(-1)(-2)(-3) ); // 0
-console.log( sum(0)(1)(2)(3)(4)(5) ); // 15
+console.log( sum(0)(1)(2)(3)(4)(5) ); // 15*/
+
+//task
+/*
+var obj = {}
+
+function A() { return obj; }
+function B() { return obj; }
+
+var a = new A;
+var b = new B;
+
+alert( a == b );
+*/
+//task
+//calculator
+/*function Calculator() {
+    this.read = function () {
+            this.firstNum = +prompt('1st num?', '-2');
+            this.secondNum = +prompt('2nd num?', '5');
+    };
+
+    this.sum = function() {
+        return this.firstNum + this.secondNum;
+    };
+
+    this.mul = function() {
+        return this.firstNum * this.secondNum;
+    };
+}
+
+
+
+
+var calculator = new Calculator();
+calculator.read();
+
+alert( "Сумма= " + calculator.sum() );
+alert( "Произведение= " + calculator.mul() );*/
+//task
+//accumulator
+/*
+function Accumulator(startingValue) {
+    this.value = startingValue;
+
+    this.read = function () {
+        this.value += +prompt('num?', '0');
+    }
+}
+
+
+var accumulator = new Accumulator(1);
+accumulator.read();
+accumulator.read();
+alert( accumulator.value );
+*/
+//task
+//calculator
+//decision by js.ru
+/*function Calculator() {
+    var methods = {
+        "-": function (a, b) {
+            return a - b;
+        },
+        "+": function (a, b) {
+            return a + b;
+        }
+    };
+
+    this.calculate = function (str) {
+
+        var split = str.split(' '),
+            a = +split[0],
+            op = split[1],
+            b = +split[2]
+
+        if (!methods[op] || isNaN(a) || isNaN(b)) {
+            return NaN;
+        }
+
+        return methods[op](a, b);
+    }
+
+    this.addMethod = function (name, func) {
+        methods[name] = func;
+
+    };
+}
+
+var calc = new Calculator;
+
+calc.addMethod('*', function (a, b) {
+    return a * b;
+});
+calc.addMethod('/', function (a, b) {
+    return a / b;
+});
+calc.addMethod('**', function (a, b) {
+    return Math.pow(a, b);
+});
+
+var result = calc.calculate('2 ** 3');
+alert( result );*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
