@@ -864,244 +864,84 @@ buffer2(0);
 alert( buffer2() );*/
 
 //task
-//buffer with clear
-
-/*function makeBuffer() {
-    var text = '';
-
-    function buffer(piece) {
-        if (arguments.length == 0) {
-            return text;
-        }
-        text += piece;
-    }
-
-    buffer.clear = function () {
-        text = '';
-    };
-
-    return buffer;
-}
-
-var buffer = makeBuffer();
-
-buffer('Тест');
-buffer(' тебя не съест ');
-alert( buffer() );
-
-buffer.clear();
-
-alert( buffer() );*/
-
-//task
 //sorting
-
-
-//task
-//Filtering through the function
-/*function filter(arr, func) {
-    var result = [];
-
-    for (var i = 0; i < arr.length; i++) {
-        var val = arr[i];
-        if (func(val)) {
-            result.push(val);
-        }
-    }
-
-    return result;
-}
-
-var arr = [1, 2, 3, 4, 5, 6, 7];
-
-alert (filter(arr, function(a) {
-    return a % 2 == 0;
-}));*/
-
-//filter inBetween
-
-/*function filter(arr, func) {
-    var result = [];
-
-    for (var i = 0; i < arr.length; i++) {
-        var val = arr[i];
-        if (func(val)) {
-            result.push(val);
-        }
-    }
-
-    return result;
-}
-
-function inBetween(a, b) {
-    return function(x) {
-        return x >= a && x <= b;
-    };
-}
-
-var arr = [1, 2, 3, 4, 5, 6, 7];
-alert( filter(arr, inBetween(3, 6)) );*/
-
-//filter inArray
-/*function filter(arr, func) {
-    var result = [];
-
-    for (var i= 0; i < arr.length; i++) {
-        var val = arr[i];
-        if (func(val)) {
-            result.push(val);
-        }
-    }
-
-    return result;
-}
-
-function inArray(arr) {
-    return function(x) {
-        return arr.indexOf(x) != -1;
-    };
-}
-
-var arr = [1, 2, 3, 4, 5, 6, 7];
-alert( filter(arr, inArray([1, 2, 10])) );*/
-
-//task
-//shooters
-/*function makeArmy() {
-
-    var shooters = [];
-
-    for (var i = 0; i < 10; i++) {
-        var shooter = function() {
-            alert( i );
-        };
-        shooters.push(shooter);
-    }
-
-    return shooters;
-}
-
-var army = makeArmy();
-
-army[0]();
-army[5]();
-//1.decision by js.ru
-function makeArmy() {
-
-    var shooters = [];
-
-    for (var i = 0; i < 10; i++) {
-
-        var shooter = function me() {
-            alert( me.i );
-        };
-        shooter.i = i;
-
-        shooters.push(shooter);
-    }
-
-    return shooters;
-}
-
-var army = makeArmy();
-
-army[0](); // 0
-army[1](); // 1
-//2.decision by js.ru
-function makeArmy() {
-
-    var shooters = [];
-
-    for (var i = 0; i < 10; i++) {
-
-        var shooter = (function(x) {
-
-            return function() {
-                alert( x );
-            };
-
-        })(i);
-
-        shooters.push(shooter);
-    }
-
-    return shooters;
-}
-
-var army = makeArmy();
-
-army[0](); // 0
-army[1](); // 1
-//3.decision by js.ru
-function makeArmy() {
-
-    var shooters = [];
-
-    for (var i = 0; i < 10; i++)(function(i) {
-
-        var shooter = function() {
-            alert( i );
-        };
-
-        shooters.push(shooter);
-
-    })(i);
-
-    return shooters;
-}
-
-var army = makeArmy();
-
-army[0](); // 0
-army[1](); // 1*/
-
-//task
-//calculator. methods, prompt
-//my wrong decision
 /*
-var a, b;
+var users = [{
+    name: 'Вася',
+    surname: 'Иванов',
+    age: 20
+}, {
+    name: 'Петя',
+    surname: 'Чапаев',
+    age: 25
+}, {
+    name: 'Маша',
+    surname: 'Медведева',
+    age: 18
+}];
 
-var calculator = {
-    read: function () {
-        a = +prompt( 'a?', '5' );
-        b = +prompt( 'b?', '7' );
-    },
-    sum: function () {
-        alert (a + b);
+function byField(field) {
+    return function (a, b) {
+        return a[field] > b[field] ? 1 : -1;
     }
-
 }
 
-calculator.read();
-alert( calculator.sum() );
-alert( calculator.mul() );
+users.sort(byField('name'));
+users.forEach(function(user) {
+    alert( user.name );
+});
+
+users.sort(byField('age'));
+users.forEach(function(user) {
+    alert( user.name );
+});*/
+//task
+//filtering through the function
+/*
+function filter(arr, func) {
+   var result = [];
+
+   for (var i = 0; i < arr.length; i++) {
+       var val = arr[i];
+       if (func(val)) {
+           result.push(val);
+       }
+    }
+
+    return result;
+}
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+
+alert(filter(arr, function(a) {
+    return a % 2 == 0;
+}));
+
+alert( filter(arr, inBetween(3, 6)) );
+alert( filter(arr, inArray([1, 2, 10])) );
 */
+//task
 //decision by js.ru
-var calculator = {
-    sum: function () {
-        return this.a + this.b;
-    },
+function sum(a) {
 
-    mul: function () {
-        return this.a * this.b;
-    },
+    var currentSum = a;
 
-    read: function () {
-        this.a = +prompt('a?', 0);
-        this.b = +prompt('b?', 0);
+    function f(b) {
+        currentSum += b;
+        return f;
     }
+
+    f.toString = function() {
+        return currentSum;
+    };
+
+    return f;
 }
 
-calculator.read();
-alert( calculator.sum() );
-alert( calculator.mul() );
-
-
-
-
-
-
-
+console.log( sum(1)(2) ); // 3
+console.log( sum(5)(-1)(2) ); // 6
+console.log( sum(6)(-1)(-2)(-3) ); // 0
+console.log( sum(0)(1)(2)(3)(4)(5) ); // 15
 
 
 
