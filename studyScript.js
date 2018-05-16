@@ -1086,15 +1086,50 @@ alert( vasya.lastName );
 vasya.lastName = 'Сидоров';
 
 alert( vasya.fullName );*/
+//task
+//method reduce to arguments (call, apply)
+//1. decision by js.ru
+/*function sumArgs() {
+    arguments.reduce = [].reduce;
+    return arguments.reduce(function(a, b) {
+        return a + b;
+    });
+}
 
+alert( sumArgs(1, 2, 7) );*/
+//2. decision by js.ru
+/*
+function sumArgs() {
+    return [].reduce.call(arguments, function(a, b) {
+        return a + b;
+    });
+}
 
+alert( sumArgs(4, 5, 6) );
+*/
+//task
+//apply the function to the arguments
+//decision by js.ru
+/*function sum() {
+    return [].reduce.call(arguments, function(a, b) {
+        return a + b;
+    });
+}
 
+function  mul() {
+    return [].reduce.call(arguments, function(a, b) {
+        return a * b;
+    });
+}
 
+function applyAll(func) {
+    return func.apply(this, [].slice.call(arguments, 1));
+}
 
-
-
-
-
+alert( applyAll(sum, 1, 2, 3) );
+alert( applyAll(mul, 2, 3, 4) );
+alert( applyAll(Math.max, 2, -2, 3) );
+alert( applyAll(Math.min, 2, -2, 3) );*/
 
 
 
