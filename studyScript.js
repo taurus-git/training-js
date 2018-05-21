@@ -1263,21 +1263,47 @@ var team = [leader, soldier];
 alert ( JSON.stringify(team) );*/
 //task
 //setTimeout-setInterval
+//setInterval
 /*
 function printNumbersInterval(){
+    var i = 1;
 
+    var timerId = setInterval(function () {
+        console.log(i);
+        if (i == 20)clearInterval(timerId);
+        i++;
+    }, 100);
 }
-*/
-function timer() {
-    var sum = 0;
-    for( var i = 0; i <= 20, i++) {
-        sum += i;
-    }
-    return sum;
-}
-var timerID = setInterval(function ( timer ) {
-   console.log( i );
-} 100);
+
+printNumbersInterval();*/
+//task
+//Recursion setTimeout
+/*function printNumbersInterval() {
+    var i = 1;
+
+    var timeId = setTimeout(function studyTimer() {
+        console.log(i);
+        if (i < 20) setTimeout(studyTimer, 100);
+        i++;
+    }, 100);
+};
+
+printNumbersInterval();*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
