@@ -1233,6 +1233,53 @@ alert( formatDate(1234567890) );
 alert( formatDate([2014, 0, 1]) );
 alert( formatDate(new Date(2014, 0, 1)) );*/
 
+//task
+//object to JSON. JSON to object
+/*var leader = {
+    name: "Василий Иванович",
+    age: 35
+};
+//object to JSON
+var leaderToJson = JSON.stringify(leader);
+alert( leaderToJson );
+//JSON to object
+leader = JSON.parse(leaderToJson);
+console.log (leader);*/
+//task
+//objects with links to JSON
+/*var leader = {
+    name: "Василий Иванович"
+};
+
+var soldier = {
+    name: "Петька"
+};
+
+leader.soldier = soldier;
+soldier.leader = leader;
+
+var team = [leader, soldier];
+
+alert ( JSON.stringify(team) );*/
+//task
+//setTimeout-setInterval
+/*
+function printNumbersInterval(){
+
+}
+*/
+function timer() {
+    var sum = 0;
+    for( var i = 0; i <= 20, i++) {
+        sum += i;
+    }
+    return sum;
+}
+var timerID = setInterval(function ( timer ) {
+   console.log( i );
+} 100);
+
+
 
 
 
