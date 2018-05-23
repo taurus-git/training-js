@@ -1289,8 +1289,29 @@ printNumbersInterval();*/
 };
 
 printNumbersInterval();*/
+//task
+//try-catch
+//eval calculator
+//decision by js.ru
+/*var expr, res;
 
+while (true) {
+    expr = prompt('Введите выражени?', '2-');
+    if (expr == null) break;
 
+    try {
+        res = eval(expr);
+        if (isNaN(res)) {
+            throw new Error('Результат неопределён');
+        }
+
+        break;
+    } catch (e) {
+        alert( 'Ошибка: ' + e.message + ', повторите ввод' );
+    }
+}
+
+alert( res );*/
 
 
 
