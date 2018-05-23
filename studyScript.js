@@ -1294,10 +1294,18 @@ printNumbersInterval();*/
 //eval calculator
 //decision by js.ru
 /*var expr, res;
+//task
+//delay function
+//decision by js.ru
+/*
+function delay(f, ms) {
 
 while (true) {
     expr = prompt('Введите выражени?', '2-');
     if (expr == null) break;
+    return function() {
+        var savedThis = this;
+        var savedArgs = arguments;
 
     try {
         res = eval(expr);
@@ -1312,10 +1320,88 @@ while (true) {
 }
 
 alert( res );*/
+        setTimeout(function () {
+            f.apply(savedThis, savedArgs);
+        }, ms);
+    };
 
+}
 
+function f(x) {
+    alert( x );
+}
 
+var f1000 = delay(f, 1000);
+var f1500 = delay(f, 1500);
 
+f1000('text1');
+f1500('text2');
+*/
+//task
+//debounce
+//dosen't work decision by js.ru
+/*function debounce(f, ms) {
+
+    let timer = null;
+
+    return function (...args) {
+        const onCompete = () => {
+            f.apply(this, args);
+            timer = null;
+        }
+
+        if (timer) {
+            clearTimeout(timer);
+        }
+
+        timer = setTimeout(onComplete, ms);
+    };
+}
+
+function f(x) { alert(x) }
+let f = debounce(f, 1000);
+
+f(1);
+f(2);
+
+setTimeout( function () {
+    f(3)
+}, 1100 );
+setTimeout( function () {
+    f(4)
+}, 1200 )*/
+//task
+//throttle
+//decision by js.ru
+/*function throttle(func, ms) {
+
+    var isThrottled = false,
+        savedArgs,
+        savedThis;
+
+    function wrapper() {
+
+        if (isThrottled) {
+            savedArgs = arguments;
+            savedThis = this;
+            return;
+        }
+
+        func.apply(this, arguments);
+
+        isThrottled = true;
+
+        setTimeout(function() {
+            isThrottled = false;
+            if (savedArgs) {
+                wrapper.apply(savedThis, savedArgs);
+                savedArgs = savedThis = null;
+            }
+        }, ms);
+    }
+
+    return wrapper;
+}*/
 
 
 
