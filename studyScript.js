@@ -1319,7 +1319,7 @@ while (true) {
     }
 }
 
-alert( res );*/
+alert( res );*//*
         setTimeout(function () {
             f.apply(savedThis, savedArgs);
         }, ms);
@@ -1403,20 +1403,55 @@ setTimeout( function () {
     return wrapper;
 }*/
 
+//task
+/*var a = 1;
+a++;
+console.log( a );
 
+var b = 1;
+var c = b++;
+console.log( c );
 
+var e = 1;
+++e;
+console.log( e );
 
+var f = 1;
+var g = ++f;
+console.log( f );
+console.log( g );
 
-
-
-
-
-
-
-
-
-
-
+var i = 1;
+console.log( 2 * i );
+i++;
+console.log( i );*/
+//task
+//2 not correct decisions by js.ru
+/*function checkAge(age) {
+    return (age > 18) ? true : confirm('Родители разрешили?');
+}*/
+/*
+function checkAge(age) {
+    return (age > 18) || confirm('Родители разрешили?');
+}
+var age = 25;
+console.log( checkAge() );*/
+//task
+function min(a, b) {
+    if (a > b){
+        return b;
+    } else if (a < b){
+        return a;
+    } else if (a || b == '')
+        return console.log('Одно или оба числа не введены');
+    else {
+        return console.log('Введенные числа равны');
+    }
+}
+console.log( min(2, 5) );
+console.log( min(3, -1) );
+console.log( min(1, 1) );
+console.log( min(1, ) );
 
 
 
