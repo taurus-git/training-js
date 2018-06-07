@@ -1673,19 +1673,60 @@ function checkAge(age) {
 }
 var age = 25;
 console.log( checkAge() );*/
-//task
-function min(a, b) {
+//task min num
+//my decision
+/*
+var a = +prompt('a?', '');
+var b = +prompt('b', '');
+
+
+function min() {
     if (a > b){
         return b;
     } else if (a < b){
         return a;
-   // } else if (a || b == ''){
-     //   return console.log('Одно или оба числа не введены');
+    } else if (a == '' || b == ''){
+       return console.log('Одно или оба числа не введены');
     } else {
         return console.log('Введенные числа равны');
     }
 }
-console.log( 'Введены цифры '+ 'a' + ' и ' 'b' + 'минимальное - ' min(2, 5) );
-console.log( min(3, -1) );
-console.log( min(1, 1) );
-console.log( min(1, ) );
+console.log( 'Введены цифры '+ a + ' и ' + b + ' минимальное: ' + min() );
+*/
+//my second decision
+/*function min(a, b) {
+    if(a > b){
+        return console.log(b);
+    } else if (b > a){
+        return console.log(a);
+    } else{
+        return console.log('числа равны');
+    }
+}
+
+min(2, 5);
+min(3, -1);
+min(1, 1);*/
+//my third decision
+/*
+function min(a, b){
+    return a > b ? b : a;
+}*/
+//task pow
+/*function pow(x, n){
+    var result = x;
+
+    for (var i = 1; i < n; i++){
+        result *= x;
+    }
+    return console.log(result);
+}
+
+var x = +prompt('x', '');
+var n = +prompt('n', '');
+
+if (n <= 1) {
+    console.log('Степень не поддерживается')
+} else{
+    pow(x, n);
+}*/
