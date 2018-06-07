@@ -1381,25 +1381,244 @@ setTimeout( function () {
 
     return wrapper;
 }*/
+//TEST ATOM
+/*-----------------------------------------repeat the first part of the tutorial*/
+/*var admin, name;
+name = 'Василий';
+admin = name;
+alert( admin );*/
+
+//task
+/*var ourPlanetName = 'Земля';
+var userName = 'Петя';*/
+//task
+/*console.log( typeof 0 );
+console.log( typeof "0" );
+console.log( typeof foo );
+console.log( typeof true );
+console.log( typeof 'true' );
+console.log( typeof {} );*/
+//task
+// console.log( 'а' > 'я' );//false
+// console.log( 'а' > 'Я' );//true
+// console.log( 'а' > 'А' );//true
+// console.log( 'Я' > 'ААААА' );//true
+// console.log( undefined == null );//true
+// console.log( undefined === null );//false
+//task
+/*var askName = prompt('Введите Ваше имя','Иван');
+alert('Вас зовут '+ askName);
+console.log('Пользователь ввел имя', askName);*/
+//task
+/*var askQuestion = prompt('Каково «официальное» название JavaScript?', '')
+  if( askQuestion == 'ECMAScript' ){
+    alert('Верно!');
+  } else if ( askQuestion == null ) {
+    alert( 'Вы отменили ввод' );
+  } else if ( askQuestion == '' ){
+    alert('Вы ввели пустую строку!')
+  } else {
+    alert( 'Не знаете? «ECMAScript»!' );
+  }
+*/
+//task
+/*var num = prompt('Введите любое число', '0');
+
+if (num > 0){
+  alert('Число больше нуля');
+} else if (num < 0) {
+  alert('Число меньше нуля');
+} else if (num == '') {
+  alert('Вы ввели пустую строку');
+} else if (num == null) {
+  alert('Отмена ввода');
+} else {
+  alert('Вы ввели нуль');
+}*/
+//task
+/*var checkUser = prompt('Кто пришел?', '');
+
+if (checkUser == 'Админ'){
+
+  var checkPassword = prompt('Пароль?', '');
+
+  if (checkPassword == 'Черный Властелин'){
+    alert('Добро пожаловать!');
+  } else if(checkPassword == null) {
+    alert('Вход отменен');
+  } else if (checkPassword == '') {
+    alert('Вы ввели пустую строку');
+  } else {
+    alert('Пароль не верен');
+  }
+
+} else if(checkUser == null) {
+  alert('Вход отменен');
+} else if (checkUser == '') {
+  alert('Вы ввели пустую строку');
+} else {
+  alert('Я Вас не знаю');
+}*/
+//task
+//result = (a + b < 4) ? 'Мало' : 'Много';
+//task
+/*var message = (login == 'Вася') ? 'Привет!' :
+(login == 'Директор') ? 'Здравствуйте' :
+(login == '') ? 'Нет логина' :
+'';*/
+/*var result, a, b;
+a = 1;
+b = 0;
+
+result = a || b;
+console.log(result);
+console.log(a);
+console.log(b);*/
+//task
+/*var age = prompt('print some number fron 14 to 90', '');
+
+if (age >= 14 && age <= 90){
+  console.log('true')
+} else {
+  console.log('false')
+}*/
+//task
+/*var age;
+
+if (!(age >= 14 && age <= 90));
+if (age < 14 || age > 90);
+*/
+/*var a = true;
+
+console.log(typeof a);
+
+a = alert( a );
+
+console.log(typeof a);
+
+alert( 123 + 'true');*/
+//task
+/*"" + 1 + 0 = "10" // (1)
+"" - 1 + 0 = -1 // (2)
+true + false = 1
+6 / "3" = 2
+"2" * "3" = 6
+4 + 5 + "px" = "9px"
+"$" + 4 + 5
+ = "$45"
+"4" - 2
+ = 2
+"4px" - 2
+ = NaN
+7 / 0
+ = Infinity
+" -9\n" + 5 = " -9\n5"
+" -9\n" - 5 = -14
+5 && 2
+ = 2
+2 && 5
+ = 5
+5 || 0
+ = 5
+0 || 5 = 5
+null + 1 = 1 // (3)
+undefined + 1 = NaN // (4)
+null == "\n0\n" = false // (5)
++null == +"\n0\n" = true // (6)
 
 
+    1.Оператор "+" в данном случае прибавляет 1 как строку, и затем 0.
+    2.Оператор "-" работает только с числами, так что он сразу приводит "" к 0.
+    3.null при численном преобразовании становится 0
+    4.undefined при численном преобразовании становится NaN
+    5.При сравнении == с null преобразования не происходит, есть жёсткое правило: null == undefined и только.
+    6.И левая и правая часть == преобразуются к числу 0.*/
+//task
+/*for (var i = 0; i < 10; i++) {
 
+    if (i % 2) {
+      alert( i );
+      }
 
+  }*/
+//task
+/*for (var i = 2; i <= 10; i++){
+  if (i % 2 == 0) {
+    console.log(i);
+  }
+}*/
+//task
+//for->while
+/*var i = 0;
+while (i < 3) {
+  console.log( 'номер '+ i + '!' );
+  i++;
+}*/
+//task
+//decision by js.ru
+/*var num = 0;
 
+do {
+  num = prompt('Введите число больше 100', '0');
+} while (num <= 100 && num != null && num != '');*/
+//task
+//switch->if
+/*var browser = prompt('Какой у Вас браузер?', '');
 
+if (browser == 'IE'){
+  alert( 'О, да у Вас IE!' );
+} else if (browser == 'Chrome'
+|| browser == 'Firefox'
+|| browser == 'Safari'
+|| browser == 'Opera') {
+  alert( 'Да, эти браузеры мы поддерживаем' );
+} else{
+  alert( 'мы надееемся, что в Вашем браузере всё ок!' );
+}*/
+//task
+//if->switch
+/*var a = +prompt('a?', '');
 
+switch (a) {
+  case 0:
+    alert( '0' );
+    break;
 
+  case 1:
+    alert( '1' );
+    break;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  case 2:
+  case 3:
+    alert( '2,3' );
+    break;
+  default:
+    break;
+}*/
+//task
+//2 not correct decisions by js.ru
+/*function checkAge(age) {
+    return (age > 18) ? true : confirm('Родители разрешили?');
+}*/
+/*
+function checkAge(age) {
+    return (age > 18) || confirm('Родители разрешили?');
+}
+var age = 25;
+console.log( checkAge() );*/
+//task
+function min(a, b) {
+    if (a > b){
+        return b;
+    } else if (a < b){
+        return a;
+    } else if (a || b == '')
+        return console.log('Одно или оба числа не введены');
+    else {
+        return console.log('Введенные числа равны');
+    }
+}
+console.log( min(2, 5) );
+console.log( min(3, -1) );
+console.log( min(1, 1) );
+console.log( min(1, ) );
