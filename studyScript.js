@@ -1290,15 +1290,36 @@ printNumbersInterval();*/
 
 printNumbersInterval();*/
 //task
+//try-catch
+//eval calculator
+//decision by js.ru
+/*var expr, res;
+//task
 //delay function
 //decision by js.ru
 /*
 function delay(f, ms) {
 
+while (true) {
+    expr = prompt('Введите выражени?', '2-');
+    if (expr == null) break;
     return function() {
         var savedThis = this;
         var savedArgs = arguments;
 
+    try {
+        res = eval(expr);
+        if (isNaN(res)) {
+            throw new Error('Результат неопределён');
+        }
+
+        break;
+    } catch (e) {
+        alert( 'Ошибка: ' + e.message + ', повторите ввод' );
+    }
+}
+
+alert( res );*//*
         setTimeout(function () {
             f.apply(savedThis, savedArgs);
         }, ms);
@@ -1423,7 +1444,14 @@ console.log('Пользователь ввел имя', askName);*/
 */
 //task
 /*var num = prompt('Введите любое число', '0');
+//task
+/*var a = 1;
+a++;
+console.log( a );
 
+var b = 1;
+var c = b++;
+console.log( c );
 if (num > 0){
   alert('Число больше нуля');
 } else if (num < 0) {
@@ -1438,10 +1466,48 @@ if (num > 0){
 //task
 /*var checkUser = prompt('Кто пришел?', '');
 
+var e = 1;
+++e;
+console.log( e );
 if (checkUser == 'Админ'){
 
+var f = 1;
+var g = ++f;
+console.log( f );
+console.log( g );
   var checkPassword = prompt('Пароль?', '');
 
+var i = 1;
+console.log( 2 * i );
+i++;
+console.log( i );*/
+//task
+//2 not correct decisions by js.ru
+/*function checkAge(age) {
+    return (age > 18) ? true : confirm('Родители разрешили?');
+}*/
+/*
+function checkAge(age) {
+    return (age > 18) || confirm('Родители разрешили?');
+}
+var age = 25;
+console.log( checkAge() );*/
+//task
+function min(a, b) {
+    if (a > b){
+        return b;
+    } else if (a < b){
+        return a;
+    } else if (a || b == '')
+        return console.log('Одно или оба числа не введены');
+    else {
+        return console.log('Введенные числа равны');
+    }
+}
+console.log( min(2, 5) );
+console.log( min(3, -1) );
+console.log( min(1, 1) );
+console.log( min(1, ) );
   if (checkPassword == 'Черный Властелин'){
     alert('Добро пожаловать!');
   } else if(checkPassword == null) {
