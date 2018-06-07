@@ -1493,6 +1493,7 @@ function checkAge(age) {
 var age = 25;
 console.log( checkAge() );*/
 //task
+/*
 function min(a, b) {
     if (a > b){
         return b;
@@ -1678,13 +1679,13 @@ function min(a, b) {
         return b;
     } else if (a < b){
         return a;
-    } else if (a || b == '')
-        return console.log('Одно или оба числа не введены');
-    else {
+   // } else if (a || b == ''){
+     //   return console.log('Одно или оба числа не введены');
+    } else {
         return console.log('Введенные числа равны');
     }
 }
-console.log( min(2, 5) );
+console.log( 'Введены цифры '+ 'a' + ' и ' 'b' + 'минимальное - ' min(2, 5) );
 console.log( min(3, -1) );
 console.log( min(1, 1) );
 console.log( min(1, ) );
