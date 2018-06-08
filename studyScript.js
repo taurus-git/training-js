@@ -1730,3 +1730,38 @@ if (n <= 1) {
 } else{
     pow(x, n);
 }*/
+//task
+//recursion
+//cicle
+/*function sumTo(n){
+    var result = 0;
+    for (var i = 1; i <= n; i++){
+        result += i;
+    }
+    return console.log(result);
+}
+sumTo(1);
+sumTo(2);
+sumTo(3);
+sumTo(4);*/
+//recursion
+/*function sumTo(n){
+    if(n != 1){
+        return n + sumTo(n - 1);
+    } else {
+        return n;
+    }
+}
+console.log( sumTo(100) );*/
+//task
+//factorial
+/*function factorial(n) {
+   return (n != 1) ? n * factorial(n-1) : 1;
+}
+
+console.log( factorial(5) );*/
+
+
+
+
+
