@@ -1760,8 +1760,51 @@ console.log( sumTo(100) );*/
 }
 
 console.log( factorial(5) );*/
+//task
+/*var a = +prompt('1st num?', '');
+var b = +prompt('2nd num?', '');
 
 
+function sum() {
+    alert( a + b );
+}
+
+sum();*/
+//task
+/*var a = +prompt('1st num?', '0.1');
+var b = +prompt('2nd num?', '0.2');
 
 
+function sum() {
+    a *= 10;
+    b *= 10;
+    alert( (a + b) / 10 + ' $');
+}
 
+sum();*/
+//sum 0.1 + 0.2
+//second decision
+/*var a = +prompt('1st num?', '0.1');
+var b = +prompt('2nd num?', '0.2');
+
+
+function sum() {
+    sum = a + b;
+    alert( +sum.toFixed(2) + '$');
+}
+
+sum();*/
+//task
+//two decisions by js.ru
+/*var max = 100;
+
+for (var i = 0; i < 100; i++){
+    console.log( Math.round(Math.random() *max) );
+}*/
+//task
+//min-max
+/*
+var min = 5,
+    max = 10;
+
+alert( min + Math.random() * (max - min) );*/
