@@ -1808,3 +1808,69 @@ var min = 5,
     max = 10;
 
 alert( min + Math.random() * (max - min) );*/
+//task
+//my not-so-right decision.
+//error on ''
+/*
+function ucFirst(){
+    return console.log( str[0].toUpperCase() + str.slice(1) );
+}
+
+var str = "вася";
+ucFirst();*/
+/*
+function ucFirst(str){
+    return console.log( str.charAt(0).toUpperCase() +str.slice(1) );
+}
+
+ucFirst("вася");
+ucFirst("");*/
+//task
+//check spam function
+/*function checkSpam(str) {
+    var spam1 = 'viagra'.toLowerCase();
+    var spam2 = 'XXX'.toLowerCase();
+    str = str.toLowerCase();
+
+    if (~str.indexOf( spam1)){
+        console.log( true );
+    } else if (~str.indexOf( spam2)) {
+        console.log(true);
+    }   else {
+        console.log( false );
+    }
+}
+
+checkSpam('buy ViAgRA now');
+checkSpam('free xxxxx');
+checkSpam("innocent rabbit");*/
+//task
+/*function truncate(str, maxlength) {
+    if (str.length > maxlength) {
+        console.log( str.slice(0, maxlength - 3) + '...' );
+    } else {
+        console.log(str);
+    }
+}
+
+truncate("Вот, что мне хотелось бы сказать на эту тему:", 20);
+truncate("Всем привет!", 20);*/
+//task
+//extract value
+/*
+function extractCurrencyValue(str){
+    console.log( +str.slice(1) );
+}
+extractCurrencyValue('$120');
+*/
+
+
+
+
+
+
+
+
+
+
+
