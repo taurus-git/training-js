@@ -1879,6 +1879,74 @@ alert( isEmpty(schedule) ); // true
 schedule["8:30"] = "подъём";
 
 alert( isEmpty(schedule) ); // false*/
+//salary
+/*var salaries = {
+    'Вася': 100,
+    'Петя': 300,
+    'Даша': 250
+};
+
+var emptyObj = {};
+
+function salariesSum(obj) {
+    var sum = 0;
+
+    for (var key in obj) {
+        sum += obj[key];
+    }
+
+    return console.log( sum ) ;
+}
+
+salariesSum(salaries);
+salariesSum(emptyObj);*/
+//task
+/*var salaries = {
+    'Вася': 100,
+    'Петя': 300,
+    'Даша': 250
+};
+
+var result = 0;
+var resultName = '';
+
+for (var name in salaries) {
+    if (result < salaries[name]) {
+        result = salaries[name];
+        resultName = name;
+    }
+}
+    alert (resultName || 'Нет сотрудников');*/
+//task
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
