@@ -1863,8 +1863,22 @@ function extractCurrencyValue(str){
 }
 extractCurrencyValue('$120');
 */
+//task
+//simple tasks with objects
+/*function isEmpty(obj) {
+        for (var key in obj) {
+            return false;
+        }
+        return true;
+    }
 
+var schedule = {};
 
+alert( isEmpty(schedule) ); // true
+
+schedule["8:30"] = "подъём";
+
+alert( isEmpty(schedule) ); // false*/
 
 
 
