@@ -1879,6 +1879,125 @@ alert( isEmpty(schedule) ); // true
 schedule["8:30"] = "подъём";
 
 alert( isEmpty(schedule) ); // false*/
+//task
+//Arrays
+//last element
+/*var goods = [
+    'a',
+    'b',
+    'c',
+    'd',
+    'e',
+    'f'
+];
+
+var lastElement = goods[goods.length - 1];
+console.log( lastElement );*/
+//add new item
+/*var goods = [];
+
+goods.push('Компьютер');
+goods[goods.length] = 'Laptop';
+
+console.log( goods );*/
+//Array creation
+/*var styles = [];
+styles.push('Джазз', 'Блюз');
+styles.push('Рок-н-Ролл');
+styles[styles.length - 2] = 'Классика';
+alert( styles.shift() );
+styles.unshift('Рэп', 'Регги');
+
+console.log( styles );*/
+//get random value from array
+/*
+//my decision
+var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+
+var min = 0;
+var max = arr.length - 1;
+
+var rand = min + Math.floor(Math.random() * (max + 1 - min));
+
+console.log( arr[rand] );
+*/
+//decision by js.ru
+/*
+var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+
+var rand = Math.floor(Math.random() * arr.length);
+
+alert( arr[rand] );
+*/
+//calculator, prompt
+//my decision
+/*var numArray = [];
+var sum = 0;
+
+getNumSum();
+
+function getNumSum() {
+    var num = prompt('Enter a number', '0');
+
+    if ( (num === '') || (num === null) || isNaN(num)) {
+        arraySum();
+    } else {
+        getNumSum();
+        numArray.push(+num);
+    }
+}
+
+function arraySum() {
+    for (var i = 0; i < numArray.length; i++) {
+        sum = sum + numArray[i];
+    }
+    return sum;
+}
+
+console.log( arraySum() );*/
+//decision by js.ru
+/*var numbers = [];
+
+while (true) {
+
+    var value = prompt('Enter a number', '0');
+
+    if (value === '' || value === null || isNaN(value)) break;
+
+    numbers.push(+value);
+}
+
+var sum = 0;
+
+for (var i = 0; i < numbers.length; i++ ) {
+    sum += numbers[i];
+}
+
+console.log( sum );*/
+//search in array
+
+/*function find(arr, value) {
+
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] === value) {
+            return i ;
+        }
+    }
+
+    return -1 ;
+}
+
+
+var arr = ["test", 2, 1.5, false];
+
+console.log( find(arr, "test") );
+console.log( find(arr, 2) );
+console.log( find(arr, 1.5) );
+console.log( find(arr, 0) );*/
+
+
+
+
 
 
 
