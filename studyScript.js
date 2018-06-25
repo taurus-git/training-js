@@ -2024,16 +2024,35 @@ console.log( sum );*/
 
     return -1 ;
 }
-
-
 var arr = ["test", 2, 1.5, false];
 
 console.log( find(arr, "test") );
 console.log( find(arr, 2) );
 console.log( find(arr, 1.5) );
 console.log( find(arr, 0) );*/
+//task with arrays
+//add class
 
+var obj = {
+    className: 'open menu'
+};
 
+function addClass(obj, cls) {
+    for (var key in obj) {
+        console.log( obj[key] );
+        if (obj[key] === cls) {
+            break;
+        } else {
+            obj[key] = obj[key] + cls;
+        }
+    }
+}
+
+addClass(obj, 'new');
+addClass(obj, 'open');
+addClass(obj, 'me');
+
+console.log( obj.classNames );
 
 
 
