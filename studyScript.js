@@ -2032,28 +2032,30 @@ console.log( find(arr, 1.5) );
 console.log( find(arr, 0) );*/
 //task with arrays
 //add class
+//decision by js.ru
+/*function addClass(obj, cls) {
+    var classes = obj.className ? obj.className.split(' ') : [];
+
+    for (var i = 0; i < classes.length; i++) {
+        if (classes[i] == cls) return; // класс уже есть
+    }
+
+    classes.push(cls); // добавить
+
+    obj.className = classes.join(' '); // и обновить свойство
+}
 
 var obj = {
     className: 'open menu'
 };
 
-function addClass(obj, cls) {
-    for (var key in obj) {
-        console.log( obj[key] );
-        if (obj[key] === cls) {
-            break;
-        } else {
-            obj[key] = obj[key] + cls;
-        }
-    }
-}
-
 addClass(obj, 'new');
 addClass(obj, 'open');
 addClass(obj, 'me');
 
-console.log( obj.classNames );
-
+console.log( obj.className );*/
+//task
+//
 
 
 
