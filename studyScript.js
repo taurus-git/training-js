@@ -2056,11 +2056,39 @@ addClass(obj, 'me');
 console.log( obj.className );*/
 //task
 //
+//task
+/*
+function camelize(str) {
+    var arr = str.split('-');
 
+    for (var i = 1; i < arr.length; i++) {
+        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+    }
+    return arr.join('');
+}
 
+console.log( camelize("background-color") );
+console.log( camelize("list-style-image") );
+console.log( camelize("-webkit-transition") );
 
+*/
+//task
+//removeClass function
+var obj = {
+    className: 'open menu'
+};
 
+function removeClass(obj, cls) {
+    var arr = obj.className.split(' ');
+    console.log(arr);
 
+    for (var key in arr) {
+        if(k)
+    }
+}
+
+removeClass(obj, 'open');
+//removeClass(obj, 'blabla');
 
 
 
