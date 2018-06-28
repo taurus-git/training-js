@@ -2074,21 +2074,195 @@ console.log( camelize("-webkit-transition") );
 */
 //task
 //removeClass function
-var obj = {
-    className: 'open menu'
+//my decision
+/*var obj = {
+    className: 'my menu menu'
 };
 
 function removeClass(obj, cls) {
     var arr = obj.className.split(' ');
-    console.log(arr);
 
-    for (var key in arr) {
-        if(k)
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] == cls) {
+            delete arr[i];
+        }
+    }
+
+    return arr.join(' ');
+}
+
+console.log( removeClass(obj, 'menu') );
+console.log( removeClass(obj, 'blabla') );*/
+//decision by js.ru
+/*
+var obj = {
+    className: 'my menu menu'
+};
+
+function removeClass(obj, cls) {
+    var classes = obj.className.split(' ');
+
+    for (var i = 0; i < classes.length; i++) {
+        if (classes[i] == cls) {
+            classes.splice(i, 1);
+            i--; //уменьшает i, чтобы следующая итерация цикла заново проверила элемент с номером i. Без нее функция будет работать с ошибками.
+        }
+
+
+    }
+
+    return obj.className = classes.join(' ');
+
+
+
+}
+
+console.log( removeClass(obj, 'menu') );
+console.log( removeClass(obj, 'blabla') );
+alert( obj.className );
+*/
+//task
+//wrong decision. sorting is unnecessary
+/*function filterRangeInPlace(arr, a, b) {
+
+    function compareNumeric(a, b) {
+        if (a > b) return 1;
+        if (a < b) return -1;
+    }
+
+    console.log( arr.sort(compareNumeric) );
+
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] < a) {
+            arr.splice(i);
+        }
+        if (arr[i] > b) {
+            arr.splice(i);
+        }
+    }
+
+}
+
+var arr = [5, 3, 8, 1];
+
+filterRangeInPlace(arr, 1, 4);
+
+console.log( arr );*/
+//task
+//filter
+//my decision
+/*
+function filterRangeInPlace(arr, a, b) {
+    for (var i = 0; i < arr.length; i++) {
+        console.log( arr[i] );
+        if (arr[i] < a) {
+            arr.splice(i, 1);
+            i--;
+        }
+        if (arr[i] > b) {
+            arr.splice(i, 1);
+            i--;
+        }
     }
 }
 
-removeClass(obj, 'open');
-//removeClass(obj, 'blabla');
+var arr = [5, 3, 8, 1];
+
+filterRangeInPlace(arr, 1, 4);
+
+console.log( arr );
+*/
+//decision by js.ru
+/*function filterRangeInPlace(arr, a, b) {
+    for (var i = 0; i < arr.length; i++) {
+        var val = arr[i];
+
+        if (val < a || val > b) {
+            arr.splice(i--, 1);
+        }
+    }
+}
+
+var arr = [5, 3, 8, 1];
+
+filterRangeInPlace(arr, 1, 4);
+
+console.log( arr );*/
+//task
+//sort in reverse order
+//my decision
+/*
+var arr = [5, 2, 1, -10, 8];
+
+function compareNumeric(a, b) {
+    return a - b;
+}
+
+arr.sort(compareNumeric).reverse();
+
+console.log( arr );
+*/
+//decision by js.ru
+/*
+var arr = [5, 2, 1, -10, 8];
+
+function compareNumeric(a, b) {
+    return b - a;
+}
+
+arr.sort(compareNumeric);
+
+console.log( arr );
+*/
+//sorted array
+//my decision
+/*
+var arr = ["HTML", "JavaScript", "CSS"];
+var arrSorted = arr.concat();
+
+arrSorted.sort();
+
+console.log( arrSorted );
+console.log( arr );
+*/
+//decision by js.ru
+/*
+var arr = ["HTML", "JavaScript", "CSS"];
+var arrSorted = arr.slice().sort();
+
+console.log( arrSorted );
+console.log( arr );
+*/
+//sorting objects
+var vasya = { name: "Вася", age: 23 };
+var masha = { name: "Маша", age: 18 };
+var vovochka = { name: "Вовочка", age: 6 };
+
+var people = [ vasya , masha , vovochka ];
+
+var keys = Object.keys(people);
+
+console.log(keys);
+
+// теперь people: [vovochka, masha, vasya]
+//console.log(people[0].age) // 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
