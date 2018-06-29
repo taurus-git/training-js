@@ -2234,25 +2234,176 @@ console.log( arrSorted );
 console.log( arr );
 */
 //sorting objects
+//my wrong decision
+/*var vasya = { name: "Вася", age: 23 };
+var masha = { name: "Маша", age: 18 };
+var vovochka = { name: "Вовочка", age: 6 };
+
+var people = [ vasya , masha , vovochka ];
+var sortAge = [];
+
+function sortAgeInObj(arr) {
+    console.log( sortAge );
+
+    for (var i = 0; i < people.length; i++){
+        sortAge[i] = people[i].age;
+
+    }
+
+    console.log( sortAge );
+
+}
+
+function compareNumeric(a, b) {
+    return  a - b;
+}
+sortAgeInObj(sortAge);
+sortAge.sort(compareNumeric);
+console.log( sortAge );
+
+
+
+// теперь people: [vovochka, masha, vasya]
+//console.log(people[0].age) // 6*/
+//decision by js.ru
+/*function compareAge(personA, personB) {
+    return personA.age - personB.age;
+}
+
 var vasya = { name: "Вася", age: 23 };
 var masha = { name: "Маша", age: 18 };
 var vovochka = { name: "Вовочка", age: 6 };
 
 var people = [ vasya , masha , vovochka ];
 
-var keys = Object.keys(people);
+people.sort(compareAge);
 
-console.log(keys);
+for (var i = 0; i < people.length; i++ ) {
+    console.log( people[i].name );
+}*/
+//list
+//decisions by js.ru
+/*var list = {
+    value: 1,
+    next: {
+        value: 2,
+        next: {
+            value: 3,
+            next: {
+                value: 4,
+                next: null
+            }
+        }
+    }
+};
 
-// теперь people: [vovochka, masha, vasya]
-//console.log(people[0].age) // 6
+function printList(list) {
+    var tmp = list;
 
+    while (tmp) {
+        console.log( tmp.value );
+        tmp = tmp.next;
+    }
+}
 
+printList(list);*/
+//recursion
+/*var list = {
+    value: 1,
+    next: {
+        value: 2,
+        next: {
+            value: 3,
+            next: {
+                value: 4,
+                next: null
+            }
+        }
+    }
+};
 
+function printList(list) {
 
+    console.log( list.value );
 
+    if (list.next) {
+        printList(list.next);
+    }
+}
 
+printList(list);*/
+//reverse output ith recursion
+/*var list = {
+    value: 1,
+    next: {
+        value: 2,
+        next: {
+            value: 3,
+            next: {
+                value: 4,
+                next: null
+            }
+        }
+    }
+};
 
+function printList(list) {
+
+    if (list.next) {
+        printList(list.next);
+    }
+
+    console.log( list.value );
+}
+
+printList(list);*/
+/*
+var list = {
+    value: 1,
+    next: {
+        value: 2,
+        next: {
+            value: 3,
+            next: {
+                value: 4,
+                next: null
+            }
+        }
+    }
+};
+
+function printReverseList(list) {
+    var arr = [];
+    var tmp = list;
+
+    while (tmp) {
+        arr.push(tmp.value);
+        tmp = tmp.next;
+    }
+
+    for (var i = arr.length - 1; i >=0; i--) {
+        console.log( arr[i] );
+    }
+}
+
+printReverseList(list);
+*/
+/*function unique(arr) {
+    var obj = {};
+
+    for (var i = 0; i < arr.length; i++) {
+        var str = arr[i];
+        obj[str] = true; // запомнить строку в виде свойства объекта
+    }
+
+    return Object.keys(obj); // или собрать ключи перебором для IE8-
+}
+
+var strings = ["кришна", "кришна", "харе", "харе",
+    "харе", "харе", "кришна", "кришна", "8-()"
+];
+
+alert( unique(strings) );*/
 
 
 
