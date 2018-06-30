@@ -2404,6 +2404,16 @@ var strings = ["кришна", "кришна", "харе", "харе",
 ];
 
 alert( unique(strings) );*/
+//task
+//map
+/*var arr = ["Есть", "жизнь", "на", "Марсе"];
+
+var arrLength = arr.map(function (value) {
+    return value.length;
+});
+
+console.log( arrLength ); // 4,5,2,5*/
+
 
 
 
