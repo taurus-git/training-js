@@ -2413,12 +2413,51 @@ var arrLength = arr.map(function (value) {
 });
 
 console.log( arrLength ); // 4,5,2,5*/
+//task
+//my decision
+/*function f(x) {
+    var args = [];
 
+    for (var i = 0; i < arguments.length; i++) {
+        args[i] = arguments[i];
+    }
 
+    if (args.length > 0) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
 
+console.log( f(undefined) );
+console.log( f() );*/
+//decision by js.ru
+/*
+function f(x) {
+    console.log( arguments.length ? 1 : 0 );
+}
 
+f(undefined);
+f();
+*/
+//task
+/*
+function sum() {
+    var result = 0;
 
+    for (var i = 0; i < arguments.length; i++) {
+        result += arguments[i];
+    }
 
+    console.log(result);
+}
+
+sum();
+sum(1);
+sum(1, 2);
+sum(1, 2, 3);
+sum(1, 2, 3, 4);
+*/
 
 
 
