@@ -2458,8 +2458,95 @@ sum(1, 2);
 sum(1, 2, 3);
 sum(1, 2, 3, 4);
 */
+//task
+//new Date
+/*var date = new Date(2012, 1, 20, 3, 12);
+
+alert( date );*/
+//task
+//my decision
+/*
+function getWeekDay() {
+    var dayOfWeek = date.getDay();
+    if (dayOfWeek == 0) {
+        return 'вс';
+    }
+    else if (dayOfWeek == 1) {
+        return 'пн';
+    }
+    else if (dayOfWeek == 2) {
+        return 'вт';
+    }
+    else if (dayOfWeek == 3) {
+        return 'ср';
+    }
+    else if (dayOfWeek == 4) {
+        return 'чт';
+    }
+    else if (dayOfWeek == 5) {
+        return 'пт';
+    }
+    else if(dayOfWeek == 6) {
+        return 'сб';
+    } else {
+        return 'Передана не дата!'
+    }
+
+}
+
+var date = new Date(2012, 0, 3);
+console.log( date.getDay() );
+
+alert( getWeekDay() );
+*/
+//decision by js.ru
+/*function getWeekDay() {
+    var dayOfWeek = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+    return dayOfWeek[date.getDay()] ;
 
 
+}
+var date = new Date(2012, 0, 3);
+console.log( date.getDay() );
+
+alert( getWeekDay() );
+alert( date.toLocaleString('ru', {weekday: 'short'}) );*/
+//task
+//my decision
+/*
+
+function getWeekDay(date) {
+    var dayOfWeek = [7, 1, 2, 3, 4, 5, 6];
+    return dayOfWeek[date.getDay()] ;
+
+}
+
+var date = new Date(2018,6,8);
+alert( getWeekDay(date) );
+*/
+
+//decision by js.ru
+/*function getWeekDay(date) {
+    var dayOfWeek = date.getDay();
+
+    if (dayOfWeek == 0) {
+        dayOfWeek = 7;
+    }
+
+    return dayOfWeek;
+
+}
+
+var date = new Date(2018,6,8);
+alert( getWeekDay(date) );*/
+//task
+//decision by js.ru
+/*function getLastDayOfMonth(year, month) {
+    var lastDay = new Date(year, month + 1, 0);
+    return lastDay.getDate();
+}
+
+console.log( getLastDayOfMonth(2012, 1) );*/
 
 
 
