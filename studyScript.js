@@ -2547,6 +2547,60 @@ alert( getWeekDay(date) );*/
 }
 
 console.log( getLastDayOfMonth(2012, 1) );*/
+//tasks with closures
+/*function sum(a) {
+
+   return function f(b) {
+        return a + b;
+    };
+
+}
+
+console.log( sum(1)(2) );
+console.log( sum(5)(-1) );*/
+//task
+/*function makeBuffer() {
+    var str = '';
+
+    return function (phrase) {
+       if (arguments.length == 0){
+           return str;
+       } else {
+           return str += phrase;
+       }
+    }
+
+}
+
+var buffer = makeBuffer();
+
+buffer('Замыкания');
+buffer(' Использовать');
+buffer(' Нужно!');
+
+console.log( buffer() );
+
+var buffer2 = makeBuffer();
+
+buffer2(0);
+buffer2(1);
+buffer2(0);
+
+console.log( buffer2() );*/
+//task
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
