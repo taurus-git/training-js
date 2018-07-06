@@ -2588,13 +2588,67 @@ buffer2(0);
 
 console.log( buffer2() );*/
 //task
+/*function makeBuffer() {
+    var str = '';
 
+    function buffer(phrase) {
+        if (arguments.length == 0){
+            return str;
+        } else {
+            return str += phrase;
+        }
+    };
 
+    buffer.clear = function () {
+        str = '';
+    }
 
+    return buffer;
 
+}
 
+var buffer = makeBuffer();
 
+buffer("Тест");
+buffer(" тебя не съест ");
+console.log( buffer() ); // Тест тебя не съест
 
+buffer.clear();
+
+console.log( buffer() );*/
+//task
+/*var users = [{
+    name: "Вася",
+    surname: 'Иванов',
+    age: 20
+}, {
+    name: "Петя",
+    surname: 'Чапаев',
+    age: 25
+}, {
+    name: "Маша",
+    surname: 'Медведева',
+    age: 18
+}];
+
+function byField(field) {
+
+    return function(a, b) {
+        return a[field] > b[field] ? 1 : -1;
+    }
+
+}
+
+users.sort(byField('name'));
+users.forEach(function (user) {
+    console.log( user.name );
+});
+
+users.sort(byField( 'age' ));
+users.forEach(function (user) {
+    console.log( user.name );
+});*/
+//task
 
 
 
