@@ -2696,6 +2696,59 @@ alert( filter(arr, inArray([1, 2, 10])) ); // 1,2*/
     sum: function () {
         return this.a + this.b;
     },
+//task
+//calculator with constructor
+/*function Calculator() {
+
+    this.read = function () {
+        this.a = +prompt('a?', '0');
+        this.b = +prompt('b?', '0');
+    };
+
+    this.sum = function () {
+        return this.a + this.b;
+    };
+
+    this.mul = function () {
+        return this.a * this.b;
+    };
+
+};
+
+var calculator = new Calculator();
+calculator.read();
+
+console.log( 'Сумма = ' + calculator.sum() );
+console.log( 'Произведение = ' + calculator.mul() );*/
+//task
+//accumulator (constructor)
+/*function Accumulator(startingValue) {
+    this.value = startingValue;
+
+    this.read = function () {
+        this.value += +prompt('Что прибавлять будем?', '0');
+        };
+
+
+}
+
+var accumulator = new Accumulator(1);
+accumulator.read();
+accumulator.read();
+console.log( accumulator.value );*/
+//task
+//calculator
+function Calculator(string) {
+
+
+    this.calculate = function () {
+
+    }
+}
+
+var calc = new Calculator;
+
+console.log( calc.calculate('3 + 7') );
 
     mul: function () {
         return this.a * this.b;
@@ -2705,6 +2758,19 @@ alert( filter(arr, inArray([1, 2, 10])) ); // 1,2*/
 calculator.read();
 alert( calculator.sum() );
 alert( calculator.mul() );*/
+var powerCalc = new Calculator;
+powerCalc.addMethod('*', function (a, b) {
+   return a * b;
+});
+powerCalc.addMethod('/', function (a, b) {
+   return a / b;
+});
+powerCalc.addMethod('**', function (a, b) {
+   return Math.pow(a, b);
+});
+
+var result = powerCalc.calculate('2 ** 3');
+console.log( result );
 
 
 
