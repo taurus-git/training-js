@@ -2685,7 +2685,26 @@ alert(filter(arr, function(a) {
 alert( filter(arr, inBetween(3, 6)) ); // 3,4,5,6
 
 alert( filter(arr, inArray([1, 2, 10])) ); // 1,2*/
+//task
+//calculator
+/*var calculator = {
+    read: function () {
+        this.a = +prompt('a?', '0');
+        this.b = +prompt('b?', '0');
+    },
 
+    sum: function () {
+        return this.a + this.b;
+    },
+
+    mul: function () {
+        return this.a * this.b;
+    },
+}
+
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() );*/
 
 
 
