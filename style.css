@@ -8,6 +8,32 @@ body{
             Sans, Droid Sans,
             Helvetica Neue,
             sans-serif;
+        /*scrolling gradient styles start*/
+    background: linear-gradient(to bottom, #B721FF, #2AF598, #fec051, #FEE140, #FA709A );
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+body:before{
+        content:'';
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+        background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #21D4FD 75%);
+        /*scrolling gradient styles end*/
+}
+.wrapper{
+        margin-top: 5px;
+        margin-right: 5%;
+        margin-bottom: 5px;
+        margin-left: 5%;
+        padding-top: 10px;
+        padding-right: 5%;
+        padding-bottom: 5px;
+        padding-left: 5%;
+        border-radius: 15px;
+        background-color: aliceblue;
 }
 /*
 

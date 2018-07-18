@@ -2738,44 +2738,69 @@ accumulator.read();
 console.log( accumulator.value );*/
 //task
 //calculator
-function Calculator(string) {
+//decision by js.ru
+/*function Calculator() {
 
+    var methods = {
+        "-": function(a, b) {
+            return a - b;
+        },
+        "+": function(a, b) {
+            return a + b;
+        }
+    };
 
-    this.calculate = function () {
+    this.calculate = function(str) {
 
+        var split = str.split(' '),
+            a = +split[0],
+            op = split[1],
+            b = +split[2]
+
+        if (!methods[op] || isNaN(a) || isNaN(b)) {
+            return NaN;
+        }
+
+        return methods[op](a, b);
     }
+
+    this.addMethod = function(name, func) {
+        methods[name] = func;
+    };
 }
 
 var calc = new Calculator;
 
-console.log( calc.calculate('3 + 7') );
+calc.addMethod("*", function(a, b) {
+    return a * b;
+});
+calc.addMethod("/", function(a, b) {
+    return a / b;
+});
+calc.addMethod("**", function(a, b) {
+    return Math.pow(a, b);
+});
 
-    mul: function () {
-        return this.a * this.b;
-    },
+var result = calc.calculate("2 ** 3");
+alert( result ); // 8
+var result = powerCalc.calculate('2 ** 3');
+console.log( result );*/
+//task
+//descriptors-getters-setters
+function User(fullName) {
+    this.fullName = fullName;
 }
 
-calculator.read();
-alert( calculator.sum() );
-alert( calculator.mul() );*/
-var powerCalc = new Calculator;
-powerCalc.addMethod('*', function (a, b) {
-   return a * b;
-});
-powerCalc.addMethod('/', function (a, b) {
-   return a / b;
-});
-powerCalc.addMethod('**', function (a, b) {
-   return Math.pow(a, b);
-});
-
-var result = powerCalc.calculate('2 ** 3');
-console.log( result );
 
 
+var vasya = new User('Высилий Попкин');
 
+console.log( vasya.firstName );
+console.log( vasya.lastName );
 
+vasya.lastName = 'Сидоров';
 
+console.log( vasya.fullName );
 
 
 
