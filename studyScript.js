@@ -2787,8 +2787,34 @@ var result = powerCalc.calculate('2 ** 3');
 console.log( result );*/
 //task
 //descriptors-getters-setters
-function User(fullName) {
+//decision by js.ru
+/*function User(fullName) {
     this.fullName = fullName;
+
+    Object.defineProperties(this, {
+            firstName: {
+
+                get: function () {
+                    return this.fullName.split(' ')[0];
+                },
+
+                set: function (newFirstName) {
+                    this.fullName = newFirstName + ' ' + this.lastName;
+                }
+            },
+
+            lastName: {
+
+                get: function () {
+                    return this.fullName.split(' ')[1];
+                },
+
+                set: function (newLastName) {
+                    this.fullName = this.firstName + ' ' + newLastName;
+                }
+
+            }
+        });
 }
 
 
@@ -2800,7 +2826,7 @@ console.log( vasya.lastName );
 
 vasya.lastName = 'Сидоров';
 
-console.log( vasya.fullName );
+console.log( vasya.fullName );*/
 
 
 
