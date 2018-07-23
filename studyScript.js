@@ -2827,6 +2827,62 @@ console.log( vasya.lastName );
 vasya.lastName = 'Сидоров';
 
 console.log( vasya.fullName );*/
+//task
+//static properties and methods
+//my bad decision
+/*
+function Article() {
+    this.created = new Date();
+};
+
+Article.count = 1;
+
+
+Article.showStats = function () {
+    var date = new Date();
+    Article.count++;
+    alert('Всего ' + this.count + ' ' + date);
+};
+
+new Article();
+new Article();
+
+Article.showStats();
+
+new Article();
+
+Article.showStats();
+*/
+//decision by js.ru
+/*function Article() {
+    this.created = new Date();
+
+    Article.count++;
+    Article.last = this.created;
+}
+Article.count = 0;
+
+Article.showStats = function () {
+    alert('Всего: ' + this.count + ', ' + 'Последняя ' + this.last );
+};
+
+new Article();
+new Article();
+
+Article.showStats();
+
+new Article();
+
+Article.showStats();*/
+
+
+
+
+
+
+
+
+
 
 
 
