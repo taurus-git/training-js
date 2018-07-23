@@ -2874,6 +2874,42 @@ Article.showStats();
 new Article();
 
 Article.showStats();*/
+//task
+/*function sumArgs() {
+/!*call*!/
+    //my decision
+    /!*var num = [].slice.call(arguments); // arguments of this function to array
+
+    return num.reduce(function (a, b) {
+        return a + b;
+    });*!/
+    //decision by js.ru
+    /!*return [].reduce.call(arguments, function (a, b) {
+        return a + b;
+    });*!/
+
+/!*apply*!/
+    /!*var num = [].slice.apply(arguments); // arguments of this function to array
+
+    return num.reduce(function (a, b) {
+        return a + b;
+    }); *!/
+/!*method lending*!/
+    /!*arguments.reduce = [].reduce;
+
+    return arguments.reduce(function (a, b) {
+        return a + b;
+    });
+*!/
+
+}
+console.log( sumArgs(1, 2, 3) );*/
+//task
+function applyAll() {
+
+}
+
+
 
 
 
