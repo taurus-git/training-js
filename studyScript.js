@@ -3056,3 +3056,1256 @@ vasya.checkPassword();*/
 
 
 
+
+console.log( 'Введены цифры '+ a + ' и ' + b + ' минимальное: ' + min() );
+*/
+//my second decision
+/*function min(a, b) {
+    if(a > b){
+        return console.log(b);
+    } else if (b > a){
+        return console.log(a);
+    } else{
+        return console.log('числа равны');
+    }
+}
+
+min(2, 5);
+min(3, -1);
+min(1, 1);*/
+//my third decision
+/*
+function min(a, b){
+    return a > b ? b : a;
+}*/
+//task pow
+/*function pow(x, n){
+    var result = x;
+
+    for (var i = 1; i < n; i++){
+        result *= x;
+    }
+    return console.log(result);
+}
+
+var x = +prompt('x', '');
+var n = +prompt('n', '');
+
+if (n <= 1) {
+    console.log('Степень не поддерживается')
+} else{
+    pow(x, n);
+}*/
+//task
+//recursion
+//cicle
+/*function sumTo(n){
+    var result = 0;
+    for (var i = 1; i <= n; i++){
+        result += i;
+    }
+    return console.log(result);
+}
+sumTo(1);
+sumTo(2);
+sumTo(3);
+sumTo(4);*/
+//recursion
+/*function sumTo(n){
+    if(n != 1){
+        return n + sumTo(n - 1);
+    } else {
+        return n;
+    }
+}
+console.log( sumTo(100) );*/
+//task
+//factorial
+/*function factorial(n) {
+   return (n != 1) ? n * factorial(n-1) : 1;
+}
+
+console.log( factorial(5) );*/
+//task
+/*var a = +prompt('1st num?', '');
+var b = +prompt('2nd num?', '');
+
+
+function sum() {
+    alert( a + b );
+}
+
+sum();*/
+//task
+/*var a = +prompt('1st num?', '0.1');
+var b = +prompt('2nd num?', '0.2');
+
+
+function sum() {
+    a *= 10;
+    b *= 10;
+    alert( (a + b) / 10 + ' $');
+}
+
+sum();*/
+//sum 0.1 + 0.2
+//second decision
+/*var a = +prompt('1st num?', '0.1');
+var b = +prompt('2nd num?', '0.2');
+
+
+function sum() {
+    sum = a + b;
+    alert( +sum.toFixed(2) + '$');
+}
+
+sum();*/
+//task
+//two decisions by js.ru
+/*var max = 100;
+
+for (var i = 0; i < 100; i++){
+    console.log( Math.round(Math.random() *max) );
+}*/
+//task
+//min-max
+/*
+var min = 5,
+    max = 10;
+
+alert( min + Math.random() * (max - min) );*/
+//task
+//my not-so-right decision.
+//error on ''
+/*
+function ucFirst(){
+    return console.log( str[0].toUpperCase() + str.slice(1) );
+}
+
+var str = "вася";
+ucFirst();*/
+/*
+function ucFirst(str){
+    return console.log( str.charAt(0).toUpperCase() +str.slice(1) );
+}
+
+ucFirst("вася");
+ucFirst("");*/
+//task
+//check spam function
+/*function checkSpam(str) {
+    var spam1 = 'viagra'.toLowerCase();
+    var spam2 = 'XXX'.toLowerCase();
+    str = str.toLowerCase();
+
+    if (~str.indexOf( spam1)){
+        console.log( true );
+    } else if (~str.indexOf( spam2)) {
+        console.log(true);
+    }   else {
+        console.log( false );
+    }
+}
+
+checkSpam('buy ViAgRA now');
+checkSpam('free xxxxx');
+checkSpam("innocent rabbit");*/
+//task
+/*function truncate(str, maxlength) {
+    if (str.length > maxlength) {
+        console.log( str.slice(0, maxlength - 3) + '...' );
+    } else {
+        console.log(str);
+    }
+}
+
+truncate("Вот, что мне хотелось бы сказать на эту тему:", 20);
+truncate("Всем привет!", 20);*/
+//task
+//extract value
+/*
+function extractCurrencyValue(str){
+    console.log( +str.slice(1) );
+}
+extractCurrencyValue('$120');
+*/
+//task
+//simple tasks with objects
+/*function isEmpty(obj) {
+        for (var key in obj) {
+            return false;
+        }
+        return true;
+    }
+
+var schedule = {};
+
+alert( isEmpty(schedule) ); // true
+
+schedule["8:30"] = "подъём";
+
+alert( isEmpty(schedule) ); // false*/
+//salary
+/*var salaries = {
+    'Вася': 100,
+    'Петя': 300,
+    'Даша': 250
+};
+
+var emptyObj = {};
+
+function salariesSum(obj) {
+    var sum = 0;
+
+    for (var key in obj) {
+        sum += obj[key];
+    }
+
+    return console.log( sum ) ;
+}
+
+salariesSum(salaries);
+salariesSum(emptyObj);*/
+//task
+/*var salaries = {
+    'Вася': 100,
+    'Петя': 300,
+    'Даша': 250
+};
+
+var result = 0;
+var resultName = '';
+
+for (var name in salaries) {
+    if (result < salaries[name]) {
+        result = salaries[name];
+        resultName = name;
+    }
+}
+    alert (resultName || 'Нет сотрудников');*/
+//task
+//Arrays
+//last element
+/*var goods = [
+    'a',
+    'b',
+    'c',
+    'd',
+    'e',
+    'f'
+];
+
+var lastElement = goods[goods.length - 1];
+console.log( lastElement );*/
+//add new item
+/*var goods = [];
+
+goods.push('Компьютер');
+goods[goods.length] = 'Laptop';
+
+console.log( goods );*/
+//Array creation
+/*var styles = [];
+styles.push('Джазз', 'Блюз');
+styles.push('Рок-н-Ролл');
+styles[styles.length - 2] = 'Классика';
+alert( styles.shift() );
+styles.unshift('Рэп', 'Регги');
+
+console.log( styles );*/
+//get random value from array
+/*
+//my decision
+var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+
+var min = 0;
+var max = arr.length - 1;
+
+var rand = min + Math.floor(Math.random() * (max + 1 - min));
+
+console.log( arr[rand] );
+*/
+//decision by js.ru
+/*
+var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+
+var rand = Math.floor(Math.random() * arr.length);
+
+alert( arr[rand] );
+*/
+//calculator, prompt
+//my decision
+/*var numArray = [];
+var sum = 0;
+
+getNumSum();
+
+function getNumSum() {
+    var num = prompt('Enter a number', '0');
+
+    if ( (num === '') || (num === null) || isNaN(num)) {
+        arraySum();
+    } else {
+        getNumSum();
+        numArray.push(+num);
+    }
+}
+
+function arraySum() {
+    for (var i = 0; i < numArray.length; i++) {
+        sum = sum + numArray[i];
+    }
+    return sum;
+}
+
+console.log( arraySum() );*/
+//decision by js.ru
+/*var numbers = [];
+
+while (true) {
+
+    var value = prompt('Enter a number', '0');
+
+    if (value === '' || value === null || isNaN(value)) break;
+
+    numbers.push(+value);
+}
+
+var sum = 0;
+
+for (var i = 0; i < numbers.length; i++ ) {
+    sum += numbers[i];
+}
+
+console.log( sum );*/
+//search in array
+
+/*function find(arr, value) {
+
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] === value) {
+            return i ;
+        }
+    }
+
+    return -1 ;
+}
+var arr = ["test", 2, 1.5, false];
+
+console.log( find(arr, "test") );
+console.log( find(arr, 2) );
+console.log( find(arr, 1.5) );
+console.log( find(arr, 0) );*/
+//task with arrays
+//add class
+//decision by js.ru
+/*function addClass(obj, cls) {
+    var classes = obj.className ? obj.className.split(' ') : [];
+
+    for (var i = 0; i < classes.length; i++) {
+        if (classes[i] == cls) return; // класс уже есть
+    }
+
+    classes.push(cls); // добавить
+
+    obj.className = classes.join(' '); // и обновить свойство
+}
+
+var obj = {
+    className: 'open menu'
+};
+
+addClass(obj, 'new');
+addClass(obj, 'open');
+addClass(obj, 'me');
+
+console.log( obj.className );*/
+//task
+//
+//task
+/*
+function camelize(str) {
+    var arr = str.split('-');
+
+    for (var i = 1; i < arr.length; i++) {
+        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+    }
+    return arr.join('');
+}
+
+console.log( camelize("background-color") );
+console.log( camelize("list-style-image") );
+console.log( camelize("-webkit-transition") );
+
+*/
+//task
+//removeClass function
+//my decision
+/*var obj = {
+    className: 'my menu menu'
+};
+
+function removeClass(obj, cls) {
+    var arr = obj.className.split(' ');
+
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] == cls) {
+            delete arr[i];
+        }
+    }
+
+    return arr.join(' ');
+}
+
+console.log( removeClass(obj, 'menu') );
+console.log( removeClass(obj, 'blabla') );*/
+//decision by js.ru
+/*
+var obj = {
+    className: 'my menu menu'
+};
+
+function removeClass(obj, cls) {
+    var classes = obj.className.split(' ');
+
+    for (var i = 0; i < classes.length; i++) {
+        if (classes[i] == cls) {
+            classes.splice(i, 1);
+            i--; //уменьшает i, чтобы следующая итерация цикла заново проверила элемент с номером i. Без нее функция будет работать с ошибками.
+        }
+
+
+    }
+
+    return obj.className = classes.join(' ');
+
+
+
+}
+
+console.log( removeClass(obj, 'menu') );
+console.log( removeClass(obj, 'blabla') );
+alert( obj.className );
+*/
+//task
+//wrong decision. sorting is unnecessary
+/*function filterRangeInPlace(arr, a, b) {
+
+    function compareNumeric(a, b) {
+        if (a > b) return 1;
+        if (a < b) return -1;
+    }
+
+    console.log( arr.sort(compareNumeric) );
+
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] < a) {
+            arr.splice(i);
+        }
+        if (arr[i] > b) {
+            arr.splice(i);
+        }
+    }
+
+}
+
+var arr = [5, 3, 8, 1];
+
+filterRangeInPlace(arr, 1, 4);
+
+console.log( arr );*/
+//task
+//filter
+//my decision
+/*
+function filterRangeInPlace(arr, a, b) {
+    for (var i = 0; i < arr.length; i++) {
+        console.log( arr[i] );
+        if (arr[i] < a) {
+            arr.splice(i, 1);
+            i--;
+        }
+        if (arr[i] > b) {
+            arr.splice(i, 1);
+            i--;
+        }
+    }
+}
+
+var arr = [5, 3, 8, 1];
+
+filterRangeInPlace(arr, 1, 4);
+
+console.log( arr );
+*/
+//decision by js.ru
+/*function filterRangeInPlace(arr, a, b) {
+    for (var i = 0; i < arr.length; i++) {
+        var val = arr[i];
+
+        if (val < a || val > b) {
+            arr.splice(i--, 1);
+        }
+    }
+}
+
+var arr = [5, 3, 8, 1];
+
+filterRangeInPlace(arr, 1, 4);
+
+console.log( arr );*/
+//task
+//sort in reverse order
+//my decision
+/*
+var arr = [5, 2, 1, -10, 8];
+
+function compareNumeric(a, b) {
+    return a - b;
+}
+
+arr.sort(compareNumeric).reverse();
+
+console.log( arr );
+*/
+//decision by js.ru
+/*
+var arr = [5, 2, 1, -10, 8];
+
+function compareNumeric(a, b) {
+    return b - a;
+}
+
+arr.sort(compareNumeric);
+
+console.log( arr );
+*/
+//sorted array
+//my decision
+/*
+var arr = ["HTML", "JavaScript", "CSS"];
+var arrSorted = arr.concat();
+
+arrSorted.sort();
+
+console.log( arrSorted );
+console.log( arr );
+*/
+//decision by js.ru
+/*
+var arr = ["HTML", "JavaScript", "CSS"];
+var arrSorted = arr.slice().sort();
+
+console.log( arrSorted );
+console.log( arr );
+*/
+//sorting objects
+//my wrong decision
+/*var vasya = { name: "Вася", age: 23 };
+var masha = { name: "Маша", age: 18 };
+var vovochka = { name: "Вовочка", age: 6 };
+
+var people = [ vasya , masha , vovochka ];
+var sortAge = [];
+
+function sortAgeInObj(arr) {
+    console.log( sortAge );
+
+    for (var i = 0; i < people.length; i++){
+        sortAge[i] = people[i].age;
+
+    }
+
+    console.log( sortAge );
+
+}
+
+function compareNumeric(a, b) {
+    return  a - b;
+}
+sortAgeInObj(sortAge);
+sortAge.sort(compareNumeric);
+console.log( sortAge );
+
+
+
+// теперь people: [vovochka, masha, vasya]
+//console.log(people[0].age) // 6*/
+//decision by js.ru
+/*function compareAge(personA, personB) {
+    return personA.age - personB.age;
+}
+
+var vasya = { name: "Вася", age: 23 };
+var masha = { name: "Маша", age: 18 };
+var vovochka = { name: "Вовочка", age: 6 };
+
+var people = [ vasya , masha , vovochka ];
+
+people.sort(compareAge);
+
+for (var i = 0; i < people.length; i++ ) {
+    console.log( people[i].name );
+}*/
+//list
+//decisions by js.ru
+/*var list = {
+    value: 1,
+    next: {
+        value: 2,
+        next: {
+            value: 3,
+            next: {
+                value: 4,
+                next: null
+            }
+        }
+    }
+};
+
+function printList(list) {
+    var tmp = list;
+
+    while (tmp) {
+        console.log( tmp.value );
+        tmp = tmp.next;
+    }
+}
+
+printList(list);*/
+//recursion
+/*var list = {
+    value: 1,
+    next: {
+        value: 2,
+        next: {
+            value: 3,
+            next: {
+                value: 4,
+                next: null
+            }
+        }
+    }
+};
+
+function printList(list) {
+
+    console.log( list.value );
+
+    if (list.next) {
+        printList(list.next);
+    }
+}
+
+printList(list);*/
+//reverse output ith recursion
+/*var list = {
+    value: 1,
+    next: {
+        value: 2,
+        next: {
+            value: 3,
+            next: {
+                value: 4,
+                next: null
+            }
+        }
+    }
+};
+
+function printList(list) {
+
+    if (list.next) {
+        printList(list.next);
+    }
+
+    console.log( list.value );
+}
+
+printList(list);*/
+/*
+var list = {
+    value: 1,
+    next: {
+        value: 2,
+        next: {
+            value: 3,
+            next: {
+                value: 4,
+                next: null
+            }
+        }
+    }
+};
+
+function printReverseList(list) {
+    var arr = [];
+    var tmp = list;
+
+    while (tmp) {
+        arr.push(tmp.value);
+        tmp = tmp.next;
+    }
+
+    for (var i = arr.length - 1; i >=0; i--) {
+        console.log( arr[i] );
+    }
+}
+
+printReverseList(list);
+*/
+/*function unique(arr) {
+    var obj = {};
+
+    for (var i = 0; i < arr.length; i++) {
+        var str = arr[i];
+        obj[str] = true; // запомнить строку в виде свойства объекта
+    }
+
+    return Object.keys(obj); // или собрать ключи перебором для IE8-
+}
+
+var strings = ["кришна", "кришна", "харе", "харе",
+    "харе", "харе", "кришна", "кришна", "8-()"
+];
+
+alert( unique(strings) );*/
+//task
+//map
+/*var arr = ["Есть", "жизнь", "на", "Марсе"];
+
+var arrLength = arr.map(function (value) {
+    return value.length;
+});
+
+console.log( arrLength ); // 4,5,2,5*/
+//task
+//my decision
+/*function f(x) {
+    var args = [];
+
+    for (var i = 0; i < arguments.length; i++) {
+        args[i] = arguments[i];
+    }
+
+    if (args.length > 0) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+console.log( f(undefined) );
+console.log( f() );*/
+//decision by js.ru
+/*
+function f(x) {
+    console.log( arguments.length ? 1 : 0 );
+}
+
+f(undefined);
+f();
+*/
+//task
+/*
+function sum() {
+    var result = 0;
+
+    for (var i = 0; i < arguments.length; i++) {
+        result += arguments[i];
+    }
+
+    console.log(result);
+}
+
+sum();
+sum(1);
+sum(1, 2);
+sum(1, 2, 3);
+sum(1, 2, 3, 4);
+*/
+//task
+//new Date
+/*var date = new Date(2012, 1, 20, 3, 12);
+
+alert( date );*/
+//task
+//my decision
+/*
+function getWeekDay() {
+    var dayOfWeek = date.getDay();
+    if (dayOfWeek == 0) {
+        return 'вс';
+    }
+    else if (dayOfWeek == 1) {
+        return 'пн';
+    }
+    else if (dayOfWeek == 2) {
+        return 'вт';
+    }
+    else if (dayOfWeek == 3) {
+        return 'ср';
+    }
+    else if (dayOfWeek == 4) {
+        return 'чт';
+    }
+    else if (dayOfWeek == 5) {
+        return 'пт';
+    }
+    else if(dayOfWeek == 6) {
+        return 'сб';
+    } else {
+        return 'Передана не дата!'
+    }
+
+}
+
+var date = new Date(2012, 0, 3);
+console.log( date.getDay() );
+
+alert( getWeekDay() );
+*/
+//decision by js.ru
+/*function getWeekDay() {
+    var dayOfWeek = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+    return dayOfWeek[date.getDay()] ;
+
+
+}
+var date = new Date(2012, 0, 3);
+console.log( date.getDay() );
+
+alert( getWeekDay() );
+alert( date.toLocaleString('ru', {weekday: 'short'}) );*/
+//task
+//my decision
+/*
+
+function getWeekDay(date) {
+    var dayOfWeek = [7, 1, 2, 3, 4, 5, 6];
+    return dayOfWeek[date.getDay()] ;
+
+}
+
+var date = new Date(2018,6,8);
+alert( getWeekDay(date) );
+*/
+
+//decision by js.ru
+/*function getWeekDay(date) {
+    var dayOfWeek = date.getDay();
+
+    if (dayOfWeek == 0) {
+        dayOfWeek = 7;
+    }
+
+    return dayOfWeek;
+
+}
+
+var date = new Date(2018,6,8);
+alert( getWeekDay(date) );*/
+//task
+//decision by js.ru
+/*function getLastDayOfMonth(year, month) {
+    var lastDay = new Date(year, month + 1, 0);
+    return lastDay.getDate();
+}
+
+console.log( getLastDayOfMonth(2012, 1) );*/
+//tasks with closures
+/*function sum(a) {
+
+   return function f(b) {
+        return a + b;
+    };
+
+}
+
+console.log( sum(1)(2) );
+console.log( sum(5)(-1) );*/
+//task
+/*function makeBuffer() {
+    var str = '';
+
+    return function (phrase) {
+       if (arguments.length == 0){
+           return str;
+       } else {
+           return str += phrase;
+       }
+    }
+
+}
+
+var buffer = makeBuffer();
+
+buffer('Замыкания');
+buffer(' Использовать');
+buffer(' Нужно!');
+
+console.log( buffer() );
+
+var buffer2 = makeBuffer();
+
+buffer2(0);
+buffer2(1);
+buffer2(0);
+
+console.log( buffer2() );*/
+//task
+/*function makeBuffer() {
+    var str = '';
+
+    function buffer(phrase) {
+        if (arguments.length == 0){
+            return str;
+        } else {
+            return str += phrase;
+        }
+    };
+
+    buffer.clear = function () {
+        str = '';
+    }
+
+    return buffer;
+
+}
+
+var buffer = makeBuffer();
+
+buffer("Тест");
+buffer(" тебя не съест ");
+console.log( buffer() ); // Тест тебя не съест
+
+buffer.clear();
+
+console.log( buffer() );*/
+//task
+/*var users = [{
+    name: "Вася",
+    surname: 'Иванов',
+    age: 20
+}, {
+    name: "Петя",
+    surname: 'Чапаев',
+    age: 25
+}, {
+    name: "Маша",
+    surname: 'Медведева',
+    age: 18
+}];
+
+function byField(field) {
+
+    return function(a, b) {
+        return a[field] > b[field] ? 1 : -1;
+    }
+
+}
+
+users.sort(byField('name'));
+users.forEach(function (user) {
+    console.log( user.name );
+});
+
+users.sort(byField( 'age' ));
+users.forEach(function (user) {
+    console.log( user.name );
+});*/
+//task
+//decision by js.ru
+/*function filter(arr, func) {
+    var result = [];
+
+    for (var i = 0; i < arr.length; i++) {
+        var val = arr[i];
+        if (func(val)) {
+            result.push(val);
+        }
+    }
+
+    return result;
+}
+
+function inBetween(a, b) {
+    return function(x) {
+        return x >= a && x <= b;
+    };
+}
+
+function inArray(arr) {
+    return function(x) {
+        return arr.indexOf(x) != -1;
+    };
+}
+
+
+var arr = [1, 2, 3, 4, 6, 7];
+
+alert(filter(arr, function(a) {
+    return a % 2 == 0;
+})); // 2, 4, 6
+
+alert( filter(arr, inBetween(3, 6)) ); // 3,4,5,6
+
+alert( filter(arr, inArray([1, 2, 10])) ); // 1,2*/
+//task
+//calculator
+/*var calculator = {
+    read: function () {
+        this.a = +prompt('a?', '0');
+        this.b = +prompt('b?', '0');
+    },
+
+    sum: function () {
+        return this.a + this.b;
+    },
+//task
+//calculator with constructor
+/*function Calculator() {
+
+    this.read = function () {
+        this.a = +prompt('a?', '0');
+        this.b = +prompt('b?', '0');
+    };
+
+    this.sum = function () {
+        return this.a + this.b;
+    };
+
+    this.mul = function () {
+        return this.a * this.b;
+    };
+
+};
+
+var calculator = new Calculator();
+calculator.read();
+
+console.log( 'Сумма = ' + calculator.sum() );
+console.log( 'Произведение = ' + calculator.mul() );*/
+//task
+//accumulator (constructor)
+/*function Accumulator(startingValue) {
+    this.value = startingValue;
+
+    this.read = function () {
+        this.value += +prompt('Что прибавлять будем?', '0');
+        };
+
+
+}
+
+var accumulator = new Accumulator(1);
+accumulator.read();
+accumulator.read();
+console.log( accumulator.value );*/
+//task
+//calculator
+//decision by js.ru
+/*function Calculator() {
+
+    var methods = {
+        "-": function(a, b) {
+            return a - b;
+        },
+        "+": function(a, b) {
+            return a + b;
+        }
+    };
+
+    this.calculate = function(str) {
+
+        var split = str.split(' '),
+            a = +split[0],
+            op = split[1],
+            b = +split[2]
+
+        if (!methods[op] || isNaN(a) || isNaN(b)) {
+            return NaN;
+        }
+
+        return methods[op](a, b);
+    }
+
+    this.addMethod = function(name, func) {
+        methods[name] = func;
+    };
+}
+
+var calc = new Calculator;
+
+calc.addMethod("*", function(a, b) {
+    return a * b;
+});
+calc.addMethod("/", function(a, b) {
+    return a / b;
+});
+calc.addMethod("**", function(a, b) {
+    return Math.pow(a, b);
+});
+
+var result = calc.calculate("2 ** 3");
+alert( result ); // 8
+var result = powerCalc.calculate('2 ** 3');
+console.log( result );*/
+//task
+//descriptors-getters-setters
+//decision by js.ru
+/*function User(fullName) {
+    this.fullName = fullName;
+
+    Object.defineProperties(this, {
+            firstName: {
+
+                get: function () {
+                    return this.fullName.split(' ')[0];
+                },
+
+                set: function (newFirstName) {
+                    this.fullName = newFirstName + ' ' + this.lastName;
+                }
+            },
+
+            lastName: {
+
+                get: function () {
+                    return this.fullName.split(' ')[1];
+                },
+
+                set: function (newLastName) {
+                    this.fullName = this.firstName + ' ' + newLastName;
+                }
+
+            }
+        });
+}
+
+
+
+var vasya = new User('Высилий Попкин');
+
+console.log( vasya.firstName );
+console.log( vasya.lastName );
+
+vasya.lastName = 'Сидоров';
+
+console.log( vasya.fullName );*/
+//task
+//static properties and methods
+//my bad decision
+/*
+function Article() {
+    this.created = new Date();
+};
+
+Article.count = 1;
+
+
+Article.showStats = function () {
+    var date = new Date();
+    Article.count++;
+    alert('Всего ' + this.count + ' ' + date);
+};
+
+new Article();
+new Article();
+
+Article.showStats();
+
+new Article();
+
+Article.showStats();
+*/
+//decision by js.ru
+/*function Article() {
+    this.created = new Date();
+
+    Article.count++;
+    Article.last = this.created;
+}
+Article.count = 0;
+
+Article.showStats = function () {
+    alert('Всего: ' + this.count + ', ' + 'Последняя ' + this.last );
+};
+
+new Article();
+new Article();
+
+Article.showStats();
+
+new Article();
+
+Article.showStats();*/
+//task
+/*function sumArgs() {
+/!*call*!/
+    //my decision
+    /!*var num = [].slice.call(arguments); // arguments of this function to array
+
+    return num.reduce(function (a, b) {
+        return a + b;
+    });*!/
+    //decision by js.ru
+    /!*return [].reduce.call(arguments, function (a, b) {
+        return a + b;
+    });*!/
+
+/!*apply*!/
+    /!*var num = [].slice.apply(arguments); // arguments of this function to array
+
+    return num.reduce(function (a, b) {
+        return a + b;
+    }); *!/
+/!*method lending*!/
+    /!*arguments.reduce = [].reduce;
+
+    return arguments.reduce(function (a, b) {
+        return a + b;
+    });
+*!/
+
+}
+console.log( sumArgs(1, 2, 3) );*/
+//task
+//decision by js.ru
+/*function sum() {
+    return [].reduce.call(arguments, function(a, b) {
+        return a + b;
+    });
+}
+
+function mul() {
+    return [].reduce.call(arguments, function(a, b) {
+        return a * b;
+    });
+}
+
+function applyAll(func) {
+    return func.apply(this, [].slice.call(arguments, 1));
+}
+
+
+alert( applyAll(sum, 1, 2, 3) ); // 6
+alert( applyAll(mul, 2, 3, 4) ); // 24
+alert( applyAll(Math.max, 2, -2, 3) ); // 3
+alert( applyAll(Math.min, 2, -2, 3) ); // -2*/
+//task
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
