@@ -3045,11 +3045,61 @@ var user = {
 var vasya = user;
 user = null;
 vasya.checkPassword();*/
+//task
+//decorator
+//decision by js.ru
+/*function work(a) {
+
+}
+
+function makelogging(f, log) {
+
+    function wrapper(a) {
+        log.push(a);
+        return f.call(this, a);
+    }
+
+    return wrapper;
+}
+
+var log = [];
+work = makelogging(work, log);
+
+work(1);
+work(5);
+
+for (var i = 0; i < log.length; i++) {
+    alert( 'Лог:' +log[i] );
+}*/
+//task
+//decision by js.ru
+/*function f(x) {
+    return Math.random()*x;
+}
+
+function makeCaching(f) {
+    var cache = {};
+
+    return function (x) {
+        if (!(x in cache)) {
+            cache[x] = f.call(this, x);
+        }
+        return cache[x];
+    };
+}
 
 
+f = makeCaching(f);
 
+var a = f(1);
+var b = f(1);
+alert( a == b );
 
+b = f(2);
 
+alert( a == b );*/
+/*-----------------------------------------END of the first part of the tutorial*/
+/*-----------------------------------------the next is OOP*/
 
 
 
