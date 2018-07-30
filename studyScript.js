@@ -3100,8 +3100,259 @@ b = f(2);
 alert( a == b );*/
 /*-----------------------------------------END of the first part of the tutorial*/
 /*-----------------------------------------the next is OOP*/
+//task
+//decision by js.ru
+/*
+function CoffeeMachine(power) {
+    this.waterAmount = 0;
 
+    var WATER_HEAT_CAPACITY = 4200;
 
+    var self = this;
+
+    var timerId;
+
+    function getBoilTime() {
+        return self.waterAmount * WATER_HEAT_CAPACITY * 80 / power;
+    }
+
+    function onReady() {
+        alert( 'Кофе готово!' )
+    }
+
+    this.run = function () {
+        timerId = setTimeout(onReady, getBoilTime());
+    };
+
+    this.stop = function() {
+        clearTimeout(timerId);
+    };
+
+}
+
+var coffeeMachine = new CoffeeMachine(50000);
+coffeeMachine.waterAmount = 200;
+
+coffeeMachine.run();
+coffeeMachine.stop();
+*/
+//task
+//getters and setters
+//my decision
+/*
+function User() {
+    var firstName, surname;
+
+    this.setFirstName = function () {
+        firstName = arguments[0];
+    };
+
+    this.setSurname = function () {
+        surname = arguments[0];
+    };
+
+    this.getFullName = function () {
+        return firstName + ' ' + surname;
+    };
+
+}
+
+var user = new User();
+user.setFirstName('Петя');
+user.setSurname('Иванов');
+
+console.log( user.getFullName() );
+*/
+//decision my js.ru
+/*function User() {
+    var firstName, surname;
+
+    this.setFirstName = function (newFirstName) {
+        firstName = newFirstName;
+    };
+
+    this.setSurname = function (newSurname) {
+        surname = newSurname;
+    };
+
+    this.getFullName = function () {
+        return firstName + ' ' + surname;
+    };
+
+}
+
+var user = new User();
+user.setFirstName('Петя');
+user.setSurname('Иванов');
+
+console.log( user.getFullName() );*/
+//task
+//non-working solution from js.ru
+/*
+function CoffeeMachine(power, capacity) {
+
+    this.getPower = function () {
+        return power;
+    };
+
+    this.setWaterAmount = function (amount) {
+        if (amount < 0) {
+            throw new Error('Значение должно быть положительным');
+        }
+        if (amount > capacity) {
+            throw new Error('Нельзя залить воды более, чем ' + capacity);
+        }
+
+        waterAmount = amount;
+    };
+
+    this.getWaterAmount = function () {
+        return waterAmount;
+    };
+}
+
+console.log( CoffeeMachine.getPower() );
+*/
+//task
+//non-working solution from js.ru
+/*
+function CoffeeMachine(power, capacity) {
+    var waterAmount = 0;
+
+    var WATER_HEAT_CAPACITY = 4200;
+
+    function getTimeToBoil() {
+        return waterAmount * WATER_HEAT_CAPACITY * 80 / power;
+    }
+
+    this.setWaterAmount = function(amount) {
+        if (amount < 0) {
+            throw new Error("Значение должно быть положительным");
+        }
+        if (amount > capacity) {
+            throw new Error("Нельзя залить больше, чем " + capacity);
+        }
+
+        waterAmount = amount;
+    };
+
+    this.addWater = function(amount) {
+        this.setWaterAmount(waterAmount + amount);
+    };
+
+    function onReady() {
+        alert( 'Кофе готов!' );
+    }
+
+    this.run = function() {
+        setTimeout(onReady, getTimeToBoil());
+    };
+
+}
+
+var coffeeMachine = new CoffeeMachine(100000, 400);
+coffeeMachine.addWater(200);
+coffeeMachine.addWater(100);
+coffeeMachine.addWater(300); // Нельзя залить больше..
+coffeeMachine.run();
+*/
+//add setter
+//decision by js.ru
+/*function CoffeeMachine(power, capacity) {
+    var waterAmount = 0;
+
+    var WATER_HEAT_CAPACITY = 4200;
+
+    function getTimeToBoil() {
+        return waterAmount * WATER_HEAT_CAPACITY * 80 / power;
+    }
+
+    this.setWaterAmount = function(amount) {
+        // ... проверки пропущены для краткости
+        waterAmount = amount;
+    };
+
+    this.getWaterAmount = function(amount) {
+        return waterAmount;
+    };
+
+    this.setOnReady = function (newOnReady) {
+        onReady = newOnReady;
+    };
+    function onReady() {
+        alert( 'Кофе готов!' );
+    }
+
+    this.run = function() {
+        setTimeout(function () {
+            onReady();
+        }, getTimeToBoil());
+    };
+
+}
+
+var coffeeMachine = new CoffeeMachine(20000, 500);
+coffeeMachine.setWaterAmount(150);
+
+coffeeMachine.setOnReady(function() {
+    var amount = coffeeMachine.getWaterAmount();
+    alert( 'Готов кофе: ' + amount + 'мл' ); // Кофе готов: 150 мл
+});
+
+coffeeMachine.run();*/
+//decision by js.ru
+/*function CoffeeMachine(power, capacity) {
+    var waterAmount = 0;
+
+    var timerId;
+
+    this.isRunning = function() {
+        return !!timerId;
+    };
+
+    var WATER_HEAT_CAPACITY = 4200;
+
+    function getTimeToBoil() {
+        return waterAmount * WATER_HEAT_CAPACITY * 80 / power;
+    }
+
+    this.setWaterAmount = function(amount) {
+        // ... проверки пропущены для краткости
+        waterAmount = amount;
+    };
+
+    this.getWaterAmount = function(amount) {
+        return waterAmount;
+    };
+
+    function onReady() {
+        alert( 'Кофе готов!' );
+    }
+
+    this.setOnReady = function(newOnReady) {
+        onReady = newOnReady;
+    };
+
+    this.run = function() {
+        timerId = setTimeout(function() {
+            timerId = null;
+            onReady();
+        }, getTimeToBoil());
+    };
+
+}
+
+var coffeeMachine = new CoffeeMachine(20000, 500);
+coffeeMachine.setWaterAmount(100);
+
+alert( 'До: ' + coffeeMachine.isRunning() ); // До: false
+
+coffeeMachine.run();
+alert( 'В процессе: ' + coffeeMachine.isRunning() ); // В процессе: true
+
+coffeeMachine.setOnReady(function() {
+    alert( "После: " + coffeeMachine.isRunning() ); // После: false
+});*/
 
 
 
