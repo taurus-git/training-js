@@ -3353,6 +3353,111 @@ alert( 'В процессе: ' + coffeeMachine.isRunning() ); // В процес
 coffeeMachine.setOnReady(function() {
     alert( "После: " + coffeeMachine.isRunning() ); // После: false
 });*/
+//task
+//decision by js.ru
+/*function Machine(power) {
+    this._enabled = false;
+
+    var self = this;
+
+    this.enable = function () {
+        self._enabled = true;
+    };
+
+    this.disable = function () {
+        self._enabled = false;
+    };
+}
+
+function CoffeeMachine(power) {
+    Machine.apply(this, arguments);
+
+    var waterAmount = 0;
+
+    this.setWaterAmount = function (amount) {
+        waterAmount = amount;
+    };
+
+    var parentEnable = this.enable;
+    this.enable = function () {
+        parentEnable();
+        this.run();
+    }
+
+    function onReady() {
+        alert( 'Кофе готово!' );
+    }
+
+    this.run = function() {
+        if (!this._enabled) {
+            throw new Error("Кофеварка выключена");
+        }
+
+        setTimeout(onReady, 1000);
+    };
+}
+
+//var coffeeMachine = new CoffeeMachine(10000);
+//coffeeMachine.run();
+
+var coffeeMachine = new CoffeeMachine(10000);
+coffeeMachine.enable();
+coffeeMachine.run();*/
+//task
+//decision by js.ru
+/*
+function Machine(power) {
+    this._enabled = false;
+
+    this.enable = function() {
+        this._enabled = true;
+    };
+
+    this.disable = function() {
+        this._enabled = false;
+    };
+}
+
+function CoffeeMachine(power) {
+    Machine.apply(this, arguments);
+
+    var waterAmount = 0;
+    var timerId;
+
+    this.setWaterAmount = function(amount) {
+        waterAmount = amount;
+    };
+
+    function onReady() {
+        alert('Кофе готов!');
+    }
+
+    var parentDisable = this.disable;
+    this.disable = function() {
+        parentDisable.call(this);
+        clearTimeout(timerId);
+    }
+
+    this.run = function() {
+        if (!this._enabled) {
+            throw new Error("Кофеварка выключена");
+        }
+        timerId = setTimeout(onReady, 1000);
+    };
+
+}
+
+var coffeeMachine = new CoffeeMachine(10000);
+coffeeMachine.enable();
+coffeeMachine.run();
+coffeeMachine.disable(); // остановит работу, ничего не выведет*/
+
+
+
+
+
+
+
 
 
 
