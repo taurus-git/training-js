@@ -3477,6 +3477,48 @@ pockets.__proto__ = bed;
 console.log( pockets.pen );
 console.log( bed.glasses );
 console.log( table.money );*/
+//task
+//decision by js.ru
+/*
+function Menu(options) {
+    options = Object.create(options);
+    options.width = 300;
+
+    alert('width: ' + options.width);
+    alert('height: ' + options.height);
+}
+
+var options = {
+    width: 100,
+    height: 200
+};
+
+var menu = new Menu(options);
+
+alert('original width: ' + options.width);
+alert('original height: ' + options.height);
+*/
+//task
+//decision by js.ru
+/*function User(name) {
+    this.name = name;
+}
+
+var obj = new User('Вася');
+var obj2 = new obj.constructor('Петя');
+
+alert( obj2.name );
+
+function User(name) {
+    this.name = name;
+}
+User.prototype = {};
+
+var obj = new User('Вася');
+var obj2 = new obj.constructor('Петя');
+
+alert( obj2.name );*/
+
 
 
 
