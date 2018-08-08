@@ -3549,9 +3549,54 @@ function f(a, b) {
 }
 
 f.defer(1000) (1, 2);*/
+//task
+//decision by js.ru
+/*
+function CoffeeMachine(power) {
+    this._power = power;
+    this._waterAmount = 0;
+}
+
+CoffeeMachine.prototype.WATER_HEAT_CAPACITY = 4200;
+
+CoffeeMachine.prototype._getTimeToBoil = function () {
+    return this._waterAmount * this.WATER_HEAT_CAPACITY * 80 / this._power;
+};
+
+CoffeeMachine.prototype.run = function () {
+    setTimeout(function () {
+        alert( 'Кофе готов!' );
+    }, this._getTimeToBoil());
+};
+
+CoffeeMachine.prototype.setWaterAmount = function (amount) {
+    this._waterAmount = amount;
+};
 
 
 
+var coffeeMachine = new CoffeeMachine(10000);
+coffeeMachine.setWaterAmount(50);
+coffeeMachine.run();
+*/
+//task
+//decision by js.ru
+/*function Hamster() {
+    this.food = [];
+}
+
+Hamster.prototype.found = function (something) {
+    this.food.push(something);
+};
+
+var speedy = new Hamster();
+var lazy = new Hamster();
+
+speedy.found('яблоко');
+speedy.found('орех');
+
+console.log( speedy.food.length );
+console.log( lazy.food.length );*/
 
 
 
