@@ -3597,6 +3597,118 @@ speedy.found('орех');
 
 console.log( speedy.food.length );
 console.log( lazy.food.length );*/
+//task
+//clock in console
+//decision by js.ru
+/*function Clock(options) {
+    this._template = options.template;
+}
+
+Clock.prototype._render = function() {
+    var date = new Date();
+
+    var hours = date.getHours();
+    if (hours < 10) hours = '0' + hours;
+
+    var min = date.getMinutes();
+    if (min < 10) min = '0' + min;
+
+    var sec = date.getSeconds();
+    if (sec < 10) sec = '0' + sec;
+
+    var output = this._template.replace('h', hours).replace('m', min).replace('s', sec);
+
+    console.log(output);
+};
+
+Clock.prototype.stop = function() {
+    clearInterval(this._timer);
+};
+
+Clock.prototype.start = function() {
+    this._render();
+    var self = this;
+    this._timer = setInterval(function() {
+        self._render();
+    }, 1000);
+};*/
+//task
+//extended clock
+//decision by js.ru
+/*function ExtendedClock(options) {
+    Clock.apply(this, arguments);
+    this._precision = +options.precision || 1000;
+}
+
+ExtendedClock.prototype = Object.create(Clock.prototype);
+
+ExtendedClock.prototype.start = function () {
+  this._render();
+  var self = this;
+  this._timer = setInterval(function () {
+      self._render();
+  }, this._precision);
+};*/
+//task
+//menu with animations and timer
+//decision by js.ru
+/*function AnimatingMenu() {
+    Menu.apply(this, arguments);
+}
+
+AnimatingMenu.prototype = Object.create(Menu.prototype);
+
+AnimatingMenu.prototype.STATE_ANIMATING = 2;
+
+AnimatingMenu.prototype.open = function() {
+    var self = this;
+
+    this._state = this.STATE_ANIMATING;
+
+    this._timer = setTimeout(function() {
+        Menu.prototype.open.call(self);
+    }, 1000);
+};
+
+AnimatingMenu.prototype.close = function() {
+    clearTimeout(this._timer);
+    Menu.prototype.close.apply(this);
+};
+
+AnimatingMenu.prototype._stateAsString = function() {
+
+    switch (this._state) {
+        case this.STATE_ANIMATING:
+            return 'анимация';
+
+        default:
+            return Menu.prototype._stateAsString.call(this);
+    }
+};
+
+// тест, использование..
+var menu = new AnimatingMenu();
+
+menu.showState(); // закрыто
+
+menu.open();
+menu.showState(); // анимация
+
+setTimeout(function() { // через 1 секунду
+    menu.showState(); // открыто
+
+    menu.close();
+    menu.showState(); // закрыто
+}, 1000);*/
+
+
+
+
+
+
+
+
+
 
 
 
