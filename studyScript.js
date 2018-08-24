@@ -3700,15 +3700,62 @@ setTimeout(function() { // через 1 секунду
     menu.close();
     menu.showState(); // закрыто
 }, 1000);*/
+/*------------------DOM------------------*/
+//task
+/*
+//HEAD
+document.head;
+document.documentElement.children[0];
+document.documentElement.firstChild;
+//ul
+document.body.children[1];
+//li
+document.body.children[1].children[1];
+*/
+//task
+/*if(!elem.childNodes.length){узел elem пуст};
+if(!elem.firstChild);
+if(!elem.lastChild);*/
+//task
+//decision by js.ru
+/*var table = document.body.children[0];
 
+for (var i = 0; i < table.rows.length; i++) {
+    var row = table.rows[i];
+    row.cells[i].style.backgroundColor = 'red';
+}*/
+//task
+//all <lable> in table
+var tableElem = document.getElementById('age-table');
+var labelElem = tableElem.getElementsByTagName('label');
+for (var i = 0; i < labelElem.length; i++) {
+    var label = labelElem[i];
+    console.log(label)
+};
+//first td in table
+var tableElem = document.getElementById('age-table');
+var firstTd = tableElem.querySelector('td');
+//var firstTd = tableElem.querySelectorAll('td')[0];
+console.log(firstTd);
+//second form in document
+var secondForm = document.getElementsByClassName('search-person');
+console.log(secondForm);
+//first form in document
+var firstForm = document.getElementsByClassName('search');
+console.log(firstForm);
+//input in form with name 'search'-------
+var nameSearch = document.getElementsByName('search');
+var firstSearchInput = nameSearch.getElementsByTagName('input');
+console.log(firstSearchInput);
+//view element info[0]
+var name0 = document.getElementsByName('info[0]');
+console.log(name0);
+//info[0] in search-person
+var searchPerson = document.getElementsByName('search-person');
+if () {
 
-
-
-
-
-
-
-
-
+    var name0;
+    console.log (name0);
+}
 
 
