@@ -3725,37 +3725,34 @@ for (var i = 0; i < table.rows.length; i++) {
     row.cells[i].style.backgroundColor = 'red';
 }*/
 //task
+/*
 //all <lable> in table
-var tableElem = document.getElementById('age-table');
-var labelElem = tableElem.getElementsByTagName('label');
-for (var i = 0; i < labelElem.length; i++) {
-    var label = labelElem[i];
-    console.log(label)
-};
+document.getElementById('age-table').getElementsByTagName('label');
 //first td in table
-var tableElem = document.getElementById('age-table');
-var firstTd = tableElem.querySelector('td');
-//var firstTd = tableElem.querySelectorAll('td')[0];
-console.log(firstTd);
+document.getElementById('age-table').getElementsByTagName('td')[0];
+//var result = document.querySelector('#age-table td');
 //second form in document
-var secondForm = document.getElementsByClassName('search-person');
-console.log(secondForm);
+document.getElementsByTagName('form')[1];
 //first form in document
-var firstForm = document.getElementsByClassName('search');
-console.log(firstForm);
-//input in form with name 'search'-------
-var nameSearch = document.getElementsByName('search');
-var firstSearchInput = nameSearch.getElementsByTagName('input');
-console.log(firstSearchInput);
+document.querySelector('form[name="search"]');
+//input in form with name 'search'
+document.querySelector('form[name="search"] input');
 //view element info[0]
-var name0 = document.getElementsByName('info[0]');
-console.log(name0);
+document.getElementsByName('info[0]')[0];
 //info[0] in search-person
-var searchPerson = document.getElementsByName('search-person');
-if () {
+document.querySelector('form[name="search-person"] [name="info[0]"]');*/
+//task
+//decision by js.ru
+/*var element = document.getElementsByTagName('li');
 
-    var name0;
-    console.log (name0);
-}
+for (var i = 0; i < element.length; i++) {
+    var title = element[i].firstChild.data;
+    title = title.trim();
+
+    var childCount = element[i].getElementsByTagName('li').length;
+
+    console.log( title + ': ' + childCount );
+
+}*/
 
 
