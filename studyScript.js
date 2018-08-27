@@ -3754,5 +3754,33 @@ for (var i = 0; i < element.length; i++) {
     console.log( title + ': ' + childCount );
 
 }*/
+//task
+/*var div = document.getElementById('widget');
+console.log( div );
+
+var widgetName = div.getAttribute('data-widget-name');
+var widgetName = div.dataset.widgetName;
+
+console.log(widgetName);
+
+//task
+//decision by js.ru
+var links = document.querySelector('a');
+
+for (var i = 0; i < links.length; i++) {
+    var a = links[i];
+    var href = a.getAttribute('href');
+    if (!href) continue;
+    if (href.indexOf('://'} == -1) continue;
+if (href.indexOf('http://internal.com') === 0) continue;
+a.classList.add('extetrnal');
+}
+//or
+var css = 'a[href*="://"]:not([href^="http://internal.com"])';
+var links = document.querySelectorAll(css);
+
+for (var i = 0; i < links.length; i++) {
+    links[i].classList.add('external');
+}*/
 
 
