@@ -3782,5 +3782,81 @@ var links = document.querySelectorAll(css);
 for (var i = 0; i < links.length; i++) {
     links[i].classList.add('external');
 }*/
+//task
+//decision by js.ru
+/*if (!Element.prototype.remove) {
+    Element.prototype.remove = function remove() {
+        if (this.parentNode) {
+            this.parentNode.removeChild(this);
+        }
+    };
+}
+
+var elem = document.body.children[0];
+
+elem.remove();
+//task
+//insertAfter function
+<div>Это</div>
+<div>Элементы</div>
+<script>
+var elem = document.createElement('div');
+elem.innerHTML = '<b>Новый элемент</b>';
+
+function insertAfter(elem, refElem) {
+    /!*var parent = refElem.parentNode;
+    var next = refElem.nextSibling;
+    if (next) {
+        return parent.inssertBefore(elem, next);
+    } else {
+        return parent.appendChild(elem);
+    }
+    *!/
+    /////or
+
+    return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
+}
+
+var body = document.body;
+
+inssertAfter(elem, body.firstChild);
+
+insertAfter(elem, body.lastChild);
+
+</script>
+
+//task
+//removeChildren function
+//decision by js.ru
+<table id="table">
+    <tr>
+    <td>Это</td>
+    <td>Все</td>
+    <td>Элементы DOM</td>
+</tr>
+</table>
+
+<ol id="ol">
+    <li>Вася</li>
+    <li>Петя</li>
+    <li>Маша</li>
+    <li>Даша</li>
+    </ol>
+
+    <script>
+    function removeChildren(elem) {
+        while (elem.lastChild) {
+            elem.removeChild(elem.lastChild);
+        }
+    }
+
+removeChildren(table);
+removeChildren(ol);
+</script>*/
+//task
+
+
+
+
 
 
