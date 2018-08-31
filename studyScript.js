@@ -4016,7 +4016,204 @@ createCalendar("calendar", 2012, 9)*/
 //task
 //decision by js.ru
 /*var timerId;
+//decision by js.ru
+/*var ul = document.createElement('ul');
+document.body.appendChild(ul);
 
+while (true) {
+    var data = prompt('Введите пункт списка', 'Новый пункт');
+
+    if (!data) {
+        break;
+    }
+
+    var li = document.createElement('li');
+    li.appendChild(document.createTextNode(data));
+    ul.appendChild(li);
+}*/
+//task
+//2 decisions from js.ru
+//1
+/*var data = {
+    "Рыбы": {
+        "Форель": {},
+        "Щука": {}
+    },
+
+    "Деревья": {
+        "Хвойные": {
+            "Лиственница": {},
+            "Ель": {}
+        },
+        "Цветковые": {
+            "Берёза": {},
+            "Тополь": {}
+        }
+
+    }
+};
+
+function createTree(container, obj) {
+    container.innerHTML = createTreeText(obj);
+}
+
+function createTreeText(obj) { // отдельная рекурсивная функция
+    var li = '';
+    for (var key in obj) {
+        li += '<li>' + key + createTreeText(obj[key]) + '</li>';
+    }
+    if (li) {
+        var ul = '<ul>' + li + '</ul>'
+    }
+    return ul || '';
+}
+
+var container = document.getElementById('container');
+createTree(container, data);*/
+//2
+/*var data = {
+    "Рыбы": {
+        "Форель": {},
+        "Щука": {}
+    },
+
+    "Деревья": {
+        "Хвойные": {
+            "Лиственница": {},
+            "Ель": {}
+        },
+        "Цветковые": {
+            "Берёза": {},
+            "Тополь": {}
+        }
+
+    }
+};
+
+function createTree(container, obj) {
+    container.appendChild(createTreeDom(obj));
+}
+
+function createTreeDom(obj) {
+    // если нет детей, то рекурсивный вызов ничего не возвращает
+    // так что вложенный UL не будет создан
+    if (isObjectEmpty(obj)) return;
+
+    var ul = document.createElement('ul');
+
+    for (var key in obj) {
+        var li = document.createElement('li');
+        li.innerHTML = key;
+
+        var childrenUl = createTreeDom(obj[key]);
+        if (childrenUl) li.appendChild(childrenUl);
+
+        ul.appendChild(li);
+    }
+
+    return ul;
+}
+
+
+function isObjectEmpty(obj) {
+    for (var key in obj) {
+        return false;
+    }
+    return true;
+}
+
+var container = document.getElementById('container');
+createTree(container, data);*/
+//task
+//decision by js.ru
+/*function createCalendar(id, year, month) {
+    var elem = document.getElementById(id);
+
+    var mon = month - 1; // месяцы в JS идут от 0 до 11, а не от 1 до 12
+    var d = new Date(year, mon);
+
+    var table = '<table><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr>';
+
+    // заполнить первый ряд от понедельника
+    // и до дня, с которого начинается месяц
+    // * * * | 1  2  3  4
+    for (var i = 0; i < getDay(d); i++) {
+        table += '<td></td>';
+    }
+
+    // ячейки календаря с датами
+    while (d.getMonth() == mon) {
+        table += '<td>' + d.getDate() + '</td>';
+
+        if (getDay(d) % 7 == 6) { // вс, последний день - перевод строки
+            table += '</tr><tr>';
+        }
+
+        d.setDate(d.getDate() + 1);
+    }
+
+    // добить таблицу пустыми ячейками, если нужно
+    if (getDay(d) != 0) {
+        for (var i = getDay(d); i < 7; i++) {
+            table += '<td></td>';
+        }
+    }
+
+    // закрыть таблицу
+    table += '</tr></table>';
+
+    // только одно присваивание innerHTML
+    elem.innerHTML = table;
+}
+
+function getDay(date) { // получить номер дня недели, от 0(пн) до 6(вс)
+    var day = date.getDay();
+    if (day == 0) day = 7;
+    return day - 1;
+}
+
+
+
+createCalendar("calendar", 2012, 9)*/
+//task
+//decision by js.ru
+/*var timerId;
+
+function update() {
+    var clock = document.getElementById('clock');
+
+    var date = new Date();
+
+    var hours = date.getHours();
+    if (hours < 10) hours = '0' + hours;
+    clock.children[0].innerHTML = hours;
+
+    var minutes = date.getMinutes();
+    if (minutes < 10) minutes = '0' + minutes;
+    clock.children[1].innerHTML = minutes;
+
+    var seconds = date.getSeconds();
+    if (seconds < 10) seconds = '0' + seconds;
+    clock.children[2].innerHTML = seconds;
+}
+
+function clockStart() {
+    timerId = setInterval(update, 1000);
+    update();
+}
+
+clockStart();
+/!*
+function clockStop() {
+    clearInterval(timerId);
+    timerId = null;
+}
+*!/*/
+//task
+/*var ul = document.body.children[0];
+
+ul.insertAdjacentHTML("beforeEnd", "<li>3</li><li>4</li><li>5</li>");*/
+/*
 function update() {
     var clock = document.getElementById('clock');
 
