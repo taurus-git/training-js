@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/studyScript.js" line="351" mnemonic="9" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2676ffb-e3de-4160-be6e-f1111ca8f076" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studyScript.js" afterPath="$PROJECT_DIR$/studyScript.js" />
+    <list default="true" id="036a6174-0de8-4a13-a006-9eaa02c906f8" name="Default" comment="tasks with styles and classes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studyScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/studyScript.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,65 +17,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="Index.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="studyScript.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/studyScript.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="334">
-                  <caret line="405" column="2" lean-forward="false" selection-start-line="405" selection-start-column="2" selection-end-line="405" selection-end-column="2" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
-    <leaf>
-      <file leaf-file-name="Index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="studyScript.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/studyScript.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="424" column="27" lean-forward="true" selection-start-line="424" selection-start-column="27" selection-end-line="424" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="studyScript.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/studyScript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="424" column="30" lean-forward="true" selection-start-line="424" selection-start-column="30" selection-end-line="424" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="200">
+              <caret line="4945" column="2" selection-start-line="4945" selection-end-line="4982" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -85,19 +30,13 @@
       <file leaf-file-name="Index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="51">
+              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>recu</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -105,7 +44,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../studyScript.js" />
+        <option value="$PROJECT_DIR$/Index.html" />
         <option value="$PROJECT_DIR$/studyScript.js" />
       </list>
     </option>
@@ -116,32 +55,27 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2359" />
-    <option name="y" value="39" />
-    <option name="width" value="340" />
-    <option name="height" value="1047" />
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1354" />
+    <option name="y" value="334" />
+    <option name="width" value="573" />
+    <option name="height" value="753" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Index.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -155,123 +89,60 @@
       </list>
     </option>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\content4\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a2676ffb-e3de-4160-be6e-f1111ca8f076" name="Default" comment="" />
-      <created>1519026732579</created>
+      <changelist id="036a6174-0de8-4a13-a006-9eaa02c906f8" name="Default" comment="" />
+      <created>1532594473458</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1519026732579</updated>
-      <workItem from="1519026738932" duration="306000" />
-      <workItem from="1519067761064" duration="3823000" />
-      <workItem from="1519155912373" duration="64000" />
-      <workItem from="1519156027012" duration="199000" />
-      <workItem from="1519158591776" duration="2269000" />
-      <workItem from="1519240303114" duration="2870000" />
-      <workItem from="1519289501333" duration="1245000" />
-      <workItem from="1519369906124" duration="3588000" />
-      <workItem from="1519629823658" duration="3814000" />
-      <workItem from="1519657009070" duration="2731000" />
-      <workItem from="1519715820989" duration="3965000" />
-      <workItem from="1519802189127" duration="2923000" />
-      <workItem from="1519805257236" duration="216000" />
-      <workItem from="1520326553746" duration="41000" />
-      <workItem from="1520368374979" duration="1378000" />
-      <workItem from="1520599513047" duration="107000" />
-      <workItem from="1520599694090" duration="575000" />
-      <workItem from="1520601379067" duration="8327000" />
-      <workItem from="1520627194332" duration="18000" />
-      <workItem from="1520627295674" duration="836000" />
-      <workItem from="1520628191354" duration="99000" />
-      <workItem from="1520628388138" duration="6000" />
-      <workItem from="1520628589375" duration="274000" />
-      <workItem from="1520628966173" duration="180000" />
-      <workItem from="1520670482763" duration="2251000" />
-      <workItem from="1521100327672" duration="2546000" />
-      <workItem from="1521184404802" duration="5391000" />
-      <workItem from="1521445502327" duration="5051000" />
-      <workItem from="1521451486396" duration="11000" />
+      <updated>1532594473458</updated>
+      <workItem from="1532594474871" duration="1291000" />
+      <workItem from="1532674731793" duration="4060000" />
+      <workItem from="1532931991617" duration="8330000" />
+      <workItem from="1533018129610" duration="219000" />
+      <workItem from="1535357974991" duration="18000" />
+      <workItem from="1535358154679" duration="78000" />
+      <workItem from="1535725908255" duration="161000" />
+      <workItem from="1535726106228" duration="823000" />
+      <workItem from="1535955568756" duration="7309000" />
     </task>
-    <task id="LOCAL-00001" summary="test commit from another work place">
-      <created>1519027017740</created>
+    <task id="LOCAL-00001" summary="tasks with styles and classes">
+      <created>1535726014436</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1519027017740</updated>
+      <updated>1535726014436</updated>
     </task>
-    <task id="LOCAL-00002" summary="login form task">
-      <created>1519071785918</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1519071785918</updated>
-    </task>
-    <task id="LOCAL-00003" summary="tasks with &quot;if&quot; complete">
-      <created>1519160722342</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1519160722343</updated>
-    </task>
-    <task id="LOCAL-00004" summary="end of the tasks with &quot;function&quot;">
-      <created>1519805347812</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1519805347812</updated>
-    </task>
-    <task id="LOCAL-00005" summary="end of the tasks with &quot;function&quot;. part 2">
-      <created>1520369121992</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1520369121992</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56734000" />
-    <option name="totallyTimeSpent" value="56504000" />
+    <option name="totallyTimeSpent" value="22289000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
-    <frame x="1912" y="48" width="1296" height="1040" extended-state="6" />
+    <frame x="1354" y="334" width="573" height="753" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22765197" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968238" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968238" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22765197" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32850242" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,173 +152,42 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test commit from another work place" />
-    <MESSAGE value="login form task" />
-    <MESSAGE value="tasks with &quot;if&quot; complete" />
-    <MESSAGE value="start of the tasks with &quot;for&quot;" />
-    <MESSAGE value="end of the tasks with &quot;function&quot;" />
-    <MESSAGE value="end of the tasks with &quot;function&quot;. part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="end of the tasks with &quot;function&quot;. part 2" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
+    <MESSAGE value="tasks with styles and classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="tasks with styles and classes" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/180218.html" />
-    <entry file="file://$PROJECT_DIR$/190218-login-user.js" />
-    <entry file="file://$PROJECT_DIR$/180218.html" />
-    <entry file="file://$PROJECT_DIR$/190218-login-user.js" />
-    <entry file="file://$PROJECT_DIR$/newScript.js" />
-    <entry file="file://$PROJECT_DIR$/180218.html" />
-    <entry file="file://$PROJECT_DIR$/newScript.js" />
-    <entry file="file://$PROJECT_DIR$/190218-login-user.js" />
-    <entry file="file://$PROJECT_DIR$/202018-2-if.js" />
-    <entry file="file://$PROJECT_DIR$/180218.html" />
-    <entry file="file://$PROJECT_DIR$/old study files/200218-if.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../studyScript.js" />
-    <entry file="file://$PROJECT_DIR$/Index.html" />
     <entry file="file://$PROJECT_DIR$/studyScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="285" column="0" lean-forward="true" selection-start-line="285" selection-start-column="0" selection-end-line="285" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="82807">
+          <caret line="4871" column="7" lean-forward="true" selection-start-line="4871" selection-start-column="7" selection-end-line="4871" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Index.html" />
+    <entry file="file://$PROJECT_DIR$/training-js/studyScript.js" />
     <entry file="file://$PROJECT_DIR$/studyScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="61217">
+          <caret line="3601" lean-forward="true" selection-start-line="3601" selection-end-line="3601" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/studyScript.js" />
     <entry file="file://$PROJECT_DIR$/Index.html" />
-    <entry file="file://$PROJECT_DIR$/studyScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4302">
-          <caret line="239" column="2" lean-forward="true" selection-start-line="239" selection-start-column="2" selection-end-line="239" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/studyScript.js" />
     <entry file="file://$PROJECT_DIR$/Index.html" />
-    <entry file="file://$PROJECT_DIR$/studyScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2820">
-          <caret line="141" column="13" lean-forward="false" selection-start-line="141" selection-start-column="13" selection-end-line="141" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Index.html" />
-    <entry file="file://$PROJECT_DIR$/studyScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2820">
-          <caret line="141" column="13" lean-forward="false" selection-start-line="141" selection-start-column="13" selection-end-line="141" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Index.html" />
-    <entry file="file://$PROJECT_DIR$/Index.html" />
-    <entry file="file://$PROJECT_DIR$/studyScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Index.html" />
-    <entry file="file://$PROJECT_DIR$/studyScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Index.html" />
-    <entry file="file://$PROJECT_DIR$/studyScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Index.html" />
-    <entry file="file://$PROJECT_DIR$/Index.html" />
-    <entry file="file://$PROJECT_DIR$/studyScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Index.html" />
-    <entry file="file://$PROJECT_DIR$/old study files/200218-if.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/studyScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/180218.html" />
-    <entry file="file://$PROJECT_DIR$/202018-2-if.js" />
-    <entry file="file://$PROJECT_DIR$/180218.html" />
-    <entry file="file://$PROJECT_DIR$/190218-login-user.js" />
-    <entry file="file://$PROJECT_DIR$/180218.html" />
-    <entry file="file://$PROJECT_DIR$/190218-login-user.js" />
-    <entry file="file://$PROJECT_DIR$/newScript.js" />
-    <entry file="file://$PROJECT_DIR$/180218.html" />
-    <entry file="file://$PROJECT_DIR$/newScript.js" />
-    <entry file="file://$PROJECT_DIR$/190218-login-user.js" />
-    <entry file="file://$PROJECT_DIR$/202018-2-if.js" />
-    <entry file="file://$PROJECT_DIR$/180218.html" />
-    <entry file="file://$PROJECT_DIR$/old study files/200218-if.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../studyScript.js" />
+    <entry file="file://$PROJECT_DIR$/../../task/111/studyScript.js" />
+    <entry file="file://$PROJECT_DIR$/training-js/studyScript.js" />
     <entry file="file://$PROJECT_DIR$/Index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        <state relative-caret-position="200">
-          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="51">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/studyScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="405" column="2" lean-forward="false" selection-start-line="405" selection-start-column="2" selection-end-line="405" selection-end-column="2" />
-        <state relative-caret-position="568">
-          <caret line="424" column="30" lean-forward="true" selection-start-line="424" selection-start-column="30" selection-end-line="424" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="200">
+          <caret line="4945" column="2" selection-start-line="4945" selection-end-line="4982" selection-end-column="50" />
         </state>
       </provider>
     </entry>

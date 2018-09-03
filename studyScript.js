@@ -2968,6 +2968,46 @@ var user = {
     loginOk: function() {
         alert( this.login + ' вошёл в сайт' );
     },
+//my decision
+/*function ask(question, answer, ok, fail) {
+    var result = prompt(question, '');
+    if (result.toLowerCase() == answer.toLowerCase()) ok();
+    else fail();
+}
+
+var user = {
+    login: 'Василий',
+    password: '12345',
+
+    loginOk: function() {
+        alert( this.login + ' вошёл в сайт' );
+    },
+
+    loginFail: function() {
+        alert( this.login + ': ошибка входа' );
+    },
+
+    checkPassword: function() {
+        ask("Ваш пароль?", this.password, this.loginOk.bind(this) , this.loginFail.bind(this));
+    }
+};
+
+user.checkPassword();*/
+//decision by js.ru
+/*
+function ask(question, answer, ok, fail) {
+    var result = prompt(question, '');
+    if (result.toLowerCase() == answer.toLowerCase()) ok();
+    else fail();
+}
+
+var user = {
+    login: 'Василий',
+    password: '12345',
+
+    loginOk: function() {
+        alert( this.login + ' вошёл в сайт' );
+    },
 
     loginFail: function() {
         alert( this.login + ': ошибка входа' );
@@ -4016,6 +4056,1159 @@ createCalendar("calendar", 2012, 9)*/
 //task
 //decision by js.ru
 /*var timerId;
+//decision by js.ru
+/*var ul = document.createElement('ul');
+document.body.appendChild(ul);
+
+while (true) {
+    var data = prompt('Введите пункт списка', 'Новый пункт');
+
+    if (!data) {
+        break;
+    }
+
+    var li = document.createElement('li');
+    li.appendChild(document.createTextNode(data));
+    ul.appendChild(li);
+}*/
+//task
+//2 decisions from js.ru
+//1
+/*var data = {
+    "Рыбы": {
+        "Форель": {},
+        "Щука": {}
+    },
+
+    "Деревья": {
+        "Хвойные": {
+            "Лиственница": {},
+            "Ель": {}
+        },
+        "Цветковые": {
+            "Берёза": {},
+            "Тополь": {}
+        }
+
+    }
+};
+
+function createTree(container, obj) {
+    container.innerHTML = createTreeText(obj);
+}
+
+function createTreeText(obj) { // отдельная рекурсивная функция
+    var li = '';
+    for (var key in obj) {
+        li += '<li>' + key + createTreeText(obj[key]) + '</li>';
+    }
+    if (li) {
+        var ul = '<ul>' + li + '</ul>'
+    }
+    return ul || '';
+}
+
+var container = document.getElementById('container');
+createTree(container, data);*/
+//2
+/*var data = {
+    "Рыбы": {
+        "Форель": {},
+        "Щука": {}
+    },
+
+    "Деревья": {
+        "Хвойные": {
+            "Лиственница": {},
+            "Ель": {}
+        },
+        "Цветковые": {
+            "Берёза": {},
+            "Тополь": {}
+        }
+
+    }
+};
+
+function createTree(container, obj) {
+    container.appendChild(createTreeDom(obj));
+}
+
+    loginFail: function() {
+        alert( this.login + ': ошибка входа' );
+    },
+function createTreeDom(obj) {
+    // если нет детей, то рекурсивный вызов ничего не возвращает
+    // так что вложенный UL не будет создан
+    if (isObjectEmpty(obj)) return;
+
+    checkPassword: function() {
+        var self = this;
+        ask( "Ваш пароль?", this.password, function () {
+            self.loginOk();
+        }, function () {
+            self.loginFail();
+        } ) ;
+    }
+};
+    var ul = document.createElement('ul');
+
+var vasya = user;
+user = null;
+vasya.checkPassword();
+*/
+//task
+/*
+function ask(question, answer, ok, fail) {
+    var result = prompt(question, '');
+    if (result.toLowerCase() == answer.toLowerCase()) ok();
+    else fail();
+}
+    for (var key in obj) {
+        var li = document.createElement('li');
+        li.innerHTML = key;
+
+var user = {
+    login: 'Василий',
+    password: '12345',
+        var childrenUl = createTreeDom(obj[key]);
+        if (childrenUl) li.appendChild(childrenUl);
+
+    // метод для вызова из ask
+    loginDone: function(result) {
+        alert( this.login + (result ? ' вошёл в сайт' : ' ошибка входа') );
+    },
+        ul.appendChild(li);
+    }
+
+    checkPassword: function() {
+        ask("Ваш пароль?", this.password, this.loginDone.bind(this, true), this.loginDone.bind(this, false));
+    }
+};
+    return ul;
+}
+
+var vasya = user;
+user = null;
+vasya.checkPassword();
+*/
+//task
+/*function ask(question, answer, ok, fail) {
+    var result = prompt(question, '');
+    if (result.toLowerCase() == answer.toLowerCase()) ok();
+    else fail();
+}
+
+var user = {
+    login: 'Василий',
+    password: '12345',
+function isObjectEmpty(obj) {
+    for (var key in obj) {
+        return false;
+    }
+    return true;
+}
+
+    // метод для вызова из ask
+    loginDone: function(result) {
+        alert( this.login + (result ? ' вошёл в сайт' : ' ошибка входа') );
+    },
+var container = document.getElementById('container');
+createTree(container, data);*/
+//task
+//decision by js.ru
+/*function createCalendar(id, year, month) {
+    var elem = document.getElementById(id);
+
+    checkPassword: function() {
+        var self = this;
+        ask("Ваш пароль?", this.password,
+            function() {
+                self.loginDone(true);
+            },
+            function() {
+                self.loginDone(false);
+            }
+        );
+    }
+};
+    var mon = month - 1; // месяцы в JS идут от 0 до 11, а не от 1 до 12
+    var d = new Date(year, mon);
+
+var vasya = user;
+user = null;
+vasya.checkPassword();*/
+//task
+//decorator
+//decision by js.ru
+/*function work(a) {
+
+}
+
+function makelogging(f, log) {
+
+    function wrapper(a) {
+        log.push(a);
+        return f.call(this, a);
+    }
+
+    return wrapper;
+}
+
+var log = [];
+work = makelogging(work, log);
+
+work(1);
+work(5);
+
+for (var i = 0; i < log.length; i++) {
+    alert( 'Лог:' +log[i] );
+}*/
+//task
+//decision by js.ru
+/*function f(x) {
+    return Math.random()*x;
+}
+
+function makeCaching(f) {
+    var cache = {};
+
+    return function (x) {
+        if (!(x in cache)) {
+            cache[x] = f.call(this, x);
+        }
+        return cache[x];
+    };
+}
+
+
+f = makeCaching(f);
+
+var a = f(1);
+var b = f(1);
+alert( a == b );
+
+b = f(2);
+
+alert( a == b );*/
+/*-----------------------------------------END of the first part of the tutorial*/
+/*-----------------------------------------the next is OOP*/
+//task
+//decision by js.ru
+/*
+function CoffeeMachine(power) {
+    this.waterAmount = 0;
+
+    var WATER_HEAT_CAPACITY = 4200;
+
+    var self = this;
+
+    var timerId;
+
+    function getBoilTime() {
+        return self.waterAmount * WATER_HEAT_CAPACITY * 80 / power;
+    }
+
+    function onReady() {
+        alert( 'Кофе готово!' )
+    }
+
+    this.run = function () {
+        timerId = setTimeout(onReady, getBoilTime());
+    };
+
+    this.stop = function() {
+        clearTimeout(timerId);
+    };
+
+}
+
+var coffeeMachine = new CoffeeMachine(50000);
+coffeeMachine.waterAmount = 200;
+
+coffeeMachine.run();
+coffeeMachine.stop();
+*/
+//task
+//getters and setters
+//my decision
+/*
+function User() {
+    var firstName, surname;
+
+    this.setFirstName = function () {
+        firstName = arguments[0];
+    };
+
+    this.setSurname = function () {
+        surname = arguments[0];
+    };
+
+    this.getFullName = function () {
+        return firstName + ' ' + surname;
+    };
+
+}
+
+var user = new User();
+user.setFirstName('Петя');
+user.setSurname('Иванов');
+
+console.log( user.getFullName() );
+*/
+//decision my js.ru
+/*function User() {
+    var firstName, surname;
+
+    this.setFirstName = function (newFirstName) {
+        firstName = newFirstName;
+    };
+
+    this.setSurname = function (newSurname) {
+        surname = newSurname;
+    };
+
+    this.getFullName = function () {
+        return firstName + ' ' + surname;
+    };
+
+}
+
+var user = new User();
+user.setFirstName('Петя');
+user.setSurname('Иванов');
+
+console.log( user.getFullName() );*/
+//task
+//non-working solution from js.ru
+/*
+function CoffeeMachine(power, capacity) {
+
+    this.getPower = function () {
+        return power;
+    };
+
+    this.setWaterAmount = function (amount) {
+        if (amount < 0) {
+            throw new Error('Значение должно быть положительным');
+        }
+        if (amount > capacity) {
+            throw new Error('Нельзя залить воды более, чем ' + capacity);
+        }
+
+        waterAmount = amount;
+    };
+
+    this.getWaterAmount = function () {
+        return waterAmount;
+    };
+}
+
+console.log( CoffeeMachine.getPower() );
+*/
+//task
+//non-working solution from js.ru
+/*
+function CoffeeMachine(power, capacity) {
+    var waterAmount = 0;
+
+    var WATER_HEAT_CAPACITY = 4200;
+
+    function getTimeToBoil() {
+        return waterAmount * WATER_HEAT_CAPACITY * 80 / power;
+    }
+
+    this.setWaterAmount = function(amount) {
+        if (amount < 0) {
+            throw new Error("Значение должно быть положительным");
+        }
+        if (amount > capacity) {
+            throw new Error("Нельзя залить больше, чем " + capacity);
+        }
+
+        waterAmount = amount;
+    };
+
+    this.addWater = function(amount) {
+        this.setWaterAmount(waterAmount + amount);
+    };
+
+    function onReady() {
+        alert( 'Кофе готов!' );
+    }
+
+    this.run = function() {
+        setTimeout(onReady, getTimeToBoil());
+    };
+
+}
+
+var coffeeMachine = new CoffeeMachine(100000, 400);
+coffeeMachine.addWater(200);
+coffeeMachine.addWater(100);
+coffeeMachine.addWater(300); // Нельзя залить больше..
+coffeeMachine.run();
+*/
+//add setter
+//decision by js.ru
+/*function CoffeeMachine(power, capacity) {
+    var waterAmount = 0;
+
+    var WATER_HEAT_CAPACITY = 4200;
+
+    function getTimeToBoil() {
+        return waterAmount * WATER_HEAT_CAPACITY * 80 / power;
+    }
+
+    this.setWaterAmount = function(amount) {
+        // ... проверки пропущены для краткости
+        waterAmount = amount;
+    };
+
+    this.getWaterAmount = function(amount) {
+        return waterAmount;
+    };
+
+    this.setOnReady = function (newOnReady) {
+        onReady = newOnReady;
+    };
+    function onReady() {
+        alert( 'Кофе готов!' );
+    }
+
+    this.run = function() {
+        setTimeout(function () {
+            onReady();
+        }, getTimeToBoil());
+    };
+
+}
+
+var coffeeMachine = new CoffeeMachine(20000, 500);
+coffeeMachine.setWaterAmount(150);
+
+coffeeMachine.setOnReady(function() {
+    var amount = coffeeMachine.getWaterAmount();
+    alert( 'Готов кофе: ' + amount + 'мл' ); // Кофе готов: 150 мл
+});
+
+coffeeMachine.run();*/
+//decision by js.ru
+/*function CoffeeMachine(power, capacity) {
+    var waterAmount = 0;
+
+    var timerId;
+
+    this.isRunning = function() {
+        return !!timerId;
+    };
+
+    var WATER_HEAT_CAPACITY = 4200;
+
+    function getTimeToBoil() {
+        return waterAmount * WATER_HEAT_CAPACITY * 80 / power;
+    }
+
+    this.setWaterAmount = function(amount) {
+        // ... проверки пропущены для краткости
+        waterAmount = amount;
+    };
+
+    this.getWaterAmount = function(amount) {
+        return waterAmount;
+    };
+
+    function onReady() {
+        alert( 'Кофе готов!' );
+    }
+
+    this.setOnReady = function(newOnReady) {
+        onReady = newOnReady;
+    };
+
+    this.run = function() {
+        timerId = setTimeout(function() {
+            timerId = null;
+            onReady();
+        }, getTimeToBoil());
+    };
+
+}
+
+var coffeeMachine = new CoffeeMachine(20000, 500);
+coffeeMachine.setWaterAmount(100);
+
+alert( 'До: ' + coffeeMachine.isRunning() ); // До: false
+
+coffeeMachine.run();
+alert( 'В процессе: ' + coffeeMachine.isRunning() ); // В процессе: true
+
+coffeeMachine.setOnReady(function() {
+    alert( "После: " + coffeeMachine.isRunning() ); // После: false
+});*/
+//task
+//decision by js.ru
+/*function Machine(power) {
+    this._enabled = false;
+
+    var self = this;
+
+    this.enable = function () {
+        self._enabled = true;
+    };
+
+    this.disable = function () {
+        self._enabled = false;
+    };
+}
+
+function CoffeeMachine(power) {
+    Machine.apply(this, arguments);
+
+    var waterAmount = 0;
+
+    this.setWaterAmount = function (amount) {
+        waterAmount = amount;
+    };
+
+    var parentEnable = this.enable;
+    this.enable = function () {
+        parentEnable();
+        this.run();
+    }
+
+    function onReady() {
+        alert( 'Кофе готово!' );
+    }
+
+    this.run = function() {
+        if (!this._enabled) {
+            throw new Error("Кофеварка выключена");
+        }
+
+        setTimeout(onReady, 1000);
+    };
+}
+
+//var coffeeMachine = new CoffeeMachine(10000);
+//coffeeMachine.run();
+
+var coffeeMachine = new CoffeeMachine(10000);
+coffeeMachine.enable();
+coffeeMachine.run();*/
+//task
+//decision by js.ru
+/*
+function Machine(power) {
+    this._enabled = false;
+
+    this.enable = function() {
+        this._enabled = true;
+    };
+
+    this.disable = function() {
+        this._enabled = false;
+    };
+}
+
+function CoffeeMachine(power) {
+    Machine.apply(this, arguments);
+
+    var waterAmount = 0;
+    var timerId;
+
+    this.setWaterAmount = function(amount) {
+        waterAmount = amount;
+    };
+
+    function onReady() {
+        alert('Кофе готов!');
+    }
+
+    var parentDisable = this.disable;
+    this.disable = function() {
+        parentDisable.call(this);
+        clearTimeout(timerId);
+    }
+
+    this.run = function() {
+        if (!this._enabled) {
+            throw new Error("Кофеварка выключена");
+        }
+        timerId = setTimeout(onReady, 1000);
+    };
+
+}
+
+var coffeeMachine = new CoffeeMachine(10000);
+coffeeMachine.enable();
+coffeeMachine.run();
+coffeeMachine.disable(); // остановит работу, ничего не выведет*/
+//task
+//prototype
+/*//decision by js.ru
+var head = {
+   glasses: 1
+};
+
+var table = {
+    pen: 3
+};
+table.__proto__ = head;
+
+var bed = {
+    sheet: 1,
+    pillow: 2
+};
+bed.__proto__ = table;
+
+var pockets = {
+    money: 2000
+};
+pockets.__proto__ = bed;
+
+console.log( pockets.pen );
+console.log( bed.glasses );
+console.log( table.money );*/
+//task
+//decision by js.ru
+/*
+function Menu(options) {
+    options = Object.create(options);
+    options.width = 300;
+
+    alert('width: ' + options.width);
+    alert('height: ' + options.height);
+}
+
+var options = {
+    width: 100,
+    height: 200
+};
+
+var menu = new Menu(options);
+
+alert('original width: ' + options.width);
+alert('original height: ' + options.height);
+*/
+//task
+//decision by js.ru
+/*function User(name) {
+    this.name = name;
+}
+
+var obj = new User('Вася');
+var obj2 = new obj.constructor('Петя');
+
+alert( obj2.name );
+
+function User(name) {
+    this.name = name;
+}
+User.prototype = {};
+
+var obj = new User('Вася');
+var obj2 = new obj.constructor('Петя');
+
+alert( obj2.name );*/
+//task
+//native prototypes
+/*
+Function.prototype.defer = function(ms) {
+    setTimeout(this, ms);
+}
+
+function f() {
+    alert( 'Привет' );
+}
+
+f.defer(1000);
+*/
+//task
+//decision by js.ru
+/*Function.prototype.defer = function (ms) {
+    var f = this;
+    return function () {
+        var args = arguments,
+            context = this;
+        setTimeout(function () {
+            f.apply(context, args);
+        }, ms);
+    }
+}
+
+function f(a, b) {
+    alert( a + b );
+}
+
+f.defer(1000) (1, 2);*/
+//task
+//decision by js.ru
+/*
+function CoffeeMachine(power) {
+    this._power = power;
+    this._waterAmount = 0;
+}
+
+CoffeeMachine.prototype.WATER_HEAT_CAPACITY = 4200;
+
+CoffeeMachine.prototype._getTimeToBoil = function () {
+    return this._waterAmount * this.WATER_HEAT_CAPACITY * 80 / this._power;
+};
+
+CoffeeMachine.prototype.run = function () {
+    setTimeout(function () {
+        alert( 'Кофе готов!' );
+    }, this._getTimeToBoil());
+};
+
+CoffeeMachine.prototype.setWaterAmount = function (amount) {
+    this._waterAmount = amount;
+};
+
+
+
+var coffeeMachine = new CoffeeMachine(10000);
+coffeeMachine.setWaterAmount(50);
+coffeeMachine.run();
+*/
+//task
+//decision by js.ru
+/*function Hamster() {
+    this.food = [];
+}
+
+Hamster.prototype.found = function (something) {
+    this.food.push(something);
+};
+
+var speedy = new Hamster();
+var lazy = new Hamster();
+
+speedy.found('яблоко');
+speedy.found('орех');
+
+console.log( speedy.food.length );
+console.log( lazy.food.length );*/
+//task
+//clock in console
+//decision by js.ru
+/*function Clock(options) {
+    this._template = options.template;
+}
+
+Clock.prototype._render = function() {
+    var date = new Date();
+
+    var hours = date.getHours();
+    if (hours < 10) hours = '0' + hours;
+
+    var min = date.getMinutes();
+    if (min < 10) min = '0' + min;
+
+    var sec = date.getSeconds();
+    if (sec < 10) sec = '0' + sec;
+
+    var output = this._template.replace('h', hours).replace('m', min).replace('s', sec);
+
+    console.log(output);
+};
+
+Clock.prototype.stop = function() {
+    clearInterval(this._timer);
+};
+
+Clock.prototype.start = function() {
+    this._render();
+    var self = this;
+    this._timer = setInterval(function() {
+        self._render();
+    }, 1000);
+};*/
+//task
+//extended clock
+//decision by js.ru
+/*function ExtendedClock(options) {
+    Clock.apply(this, arguments);
+    this._precision = +options.precision || 1000;
+}
+
+ExtendedClock.prototype = Object.create(Clock.prototype);
+
+ExtendedClock.prototype.start = function () {
+  this._render();
+  var self = this;
+  this._timer = setInterval(function () {
+      self._render();
+  }, this._precision);
+};*/
+//task
+//menu with animations and timer
+//decision by js.ru
+/*function AnimatingMenu() {
+    Menu.apply(this, arguments);
+}
+
+AnimatingMenu.prototype = Object.create(Menu.prototype);
+
+AnimatingMenu.prototype.STATE_ANIMATING = 2;
+
+AnimatingMenu.prototype.open = function() {
+    var self = this;
+
+    this._state = this.STATE_ANIMATING;
+
+    this._timer = setTimeout(function() {
+        Menu.prototype.open.call(self);
+    }, 1000);
+};
+
+AnimatingMenu.prototype.close = function() {
+    clearTimeout(this._timer);
+    Menu.prototype.close.apply(this);
+};
+
+AnimatingMenu.prototype._stateAsString = function() {
+
+    switch (this._state) {
+        case this.STATE_ANIMATING:
+            return 'анимация';
+
+        default:
+            return Menu.prototype._stateAsString.call(this);
+    }
+};
+
+// тест, использование..
+var menu = new AnimatingMenu();
+
+menu.showState(); // закрыто
+
+menu.open();
+menu.showState(); // анимация
+
+setTimeout(function() { // через 1 секунду
+    menu.showState(); // открыто
+
+    menu.close();
+    menu.showState(); // закрыто
+}, 1000);*/
+/*------------------DOM------------------*/
+//task
+/*
+//HEAD
+document.head;
+document.documentElement.children[0];
+document.documentElement.firstChild;
+//ul
+document.body.children[1];
+//li
+document.body.children[1].children[1];
+*/
+//task
+/*if(!elem.childNodes.length){узел elem пуст};
+if(!elem.firstChild);
+if(!elem.lastChild);*/
+//task
+//decision by js.ru
+/*var table = document.body.children[0];
+
+for (var i = 0; i < table.rows.length; i++) {
+    var row = table.rows[i];
+    row.cells[i].style.backgroundColor = 'red';
+}*/
+//task
+/*
+//all <lable> in table
+document.getElementById('age-table').getElementsByTagName('label');
+//first td in table
+document.getElementById('age-table').getElementsByTagName('td')[0];
+//var result = document.querySelector('#age-table td');
+//second form in document
+document.getElementsByTagName('form')[1];
+//first form in document
+document.querySelector('form[name="search"]');
+//input in form with name 'search'
+document.querySelector('form[name="search"] input');
+//view element info[0]
+document.getElementsByName('info[0]')[0];
+//info[0] in search-person
+document.querySelector('form[name="search-person"] [name="info[0]"]');*/
+//task
+//decision by js.ru
+/*var element = document.getElementsByTagName('li');
+
+for (var i = 0; i < element.length; i++) {
+    var title = element[i].firstChild.data;
+    title = title.trim();
+
+    var childCount = element[i].getElementsByTagName('li').length;
+
+    console.log( title + ': ' + childCount );
+
+}*/
+//task
+/*var div = document.getElementById('widget');
+console.log( div );
+
+var widgetName = div.getAttribute('data-widget-name');
+var widgetName = div.dataset.widgetName;
+
+console.log(widgetName);
+
+//task
+//decision by js.ru
+var links = document.querySelector('a');
+
+for (var i = 0; i < links.length; i++) {
+    var a = links[i];
+    var href = a.getAttribute('href');
+    if (!href) continue;
+    if (href.indexOf('://'} == -1) continue;
+if (href.indexOf('http://internal.com') === 0) continue;
+a.classList.add('extetrnal');
+}
+//or
+var css = 'a[href*="://"]:not([href^="http://internal.com"])';
+var links = document.querySelectorAll(css);
+
+for (var i = 0; i < links.length; i++) {
+    links[i].classList.add('external');
+}*/
+//task
+//decision by js.ru
+/*if (!Element.prototype.remove) {
+    Element.prototype.remove = function remove() {
+        if (this.parentNode) {
+            this.parentNode.removeChild(this);
+        }
+    };
+}
+
+var elem = document.body.children[0];
+
+elem.remove();
+//task
+//insertAfter function
+<div>Это</div>
+<div>Элементы</div>
+<script>
+var elem = document.createElement('div');
+elem.innerHTML = '<b>Новый элемент</b>';
+
+function insertAfter(elem, refElem) {
+    /!*var parent = refElem.parentNode;
+    var next = refElem.nextSibling;
+    if (next) {
+        return parent.inssertBefore(elem, next);
+    } else {
+        return parent.appendChild(elem);
+    }
+    *!/
+    /////or
+
+    return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
+}
+
+var body = document.body;
+
+inssertAfter(elem, body.firstChild);
+
+insertAfter(elem, body.lastChild);
+
+</script>
+
+//task
+//removeChildren function
+//decision by js.ru
+<table id="table">
+    <tr>
+    <td>Это</td>
+    <td>Все</td>
+    <td>Элементы DOM</td>
+</tr>
+</table>
+
+<ol id="ol">
+    <li>Вася</li>
+    <li>Петя</li>
+    <li>Маша</li>
+    <li>Даша</li>
+    </ol>
+
+    <script>
+    function removeChildren(elem) {
+        while (elem.lastChild) {
+            elem.removeChild(elem.lastChild);
+        }
+    }
+
+removeChildren(table);
+removeChildren(ol);
+</script>*/
+//task
+//decision by js.ru
+/*var ul = document.createElement('ul');
+document.body.appendChild(ul);
+
+while (true) {
+    var data = prompt('Введите пункт списка', 'Новый пункт');
+
+    if (!data) {
+        break;
+    }
+
+    var li = document.createElement('li');
+    li.appendChild(document.createTextNode(data));
+    ul.appendChild(li);
+}*/
+//task
+//2 decisions from js.ru
+//1
+/*var data = {
+    "Рыбы": {
+        "Форель": {},
+        "Щука": {}
+    },
+
+    "Деревья": {
+        "Хвойные": {
+            "Лиственница": {},
+            "Ель": {}
+        },
+        "Цветковые": {
+            "Берёза": {},
+            "Тополь": {}
+        }
+
+    }
+};
+
+function createTree(container, obj) {
+    container.innerHTML = createTreeText(obj);
+}
+
+function createTreeText(obj) { // отдельная рекурсивная функция
+    var li = '';
+    for (var key in obj) {
+        li += '<li>' + key + createTreeText(obj[key]) + '</li>';
+    }
+    if (li) {
+        var ul = '<ul>' + li + '</ul>'
+    }
+    return ul || '';
+}
+
+var container = document.getElementById('container');
+createTree(container, data);*/
+//2
+/*var data = {
+    "Рыбы": {
+        "Форель": {},
+        "Щука": {}
+    },
+
+    "Деревья": {
+        "Хвойные": {
+            "Лиственница": {},
+            "Ель": {}
+        },
+        "Цветковые": {
+            "Берёза": {},
+            "Тополь": {}
+        }
+
+    }
+};
+
+function createTree(container, obj) {
+    container.appendChild(createTreeDom(obj));
+}
+
+function createTreeDom(obj) {
+    // если нет детей, то рекурсивный вызов ничего не возвращает
+    // так что вложенный UL не будет создан
+    if (isObjectEmpty(obj)) return;
+
+    var ul = document.createElement('ul');
+
+    for (var key in obj) {
+        var li = document.createElement('li');
+        li.innerHTML = key;
+
+        var childrenUl = createTreeDom(obj[key]);
+        if (childrenUl) li.appendChild(childrenUl);
+
+        ul.appendChild(li);
+    }
+
+    return ul;
+}
+
+
+function isObjectEmpty(obj) {
+    for (var key in obj) {
+        return false;
+    }
+    return true;
+}
+
+var container = document.getElementById('container');
+createTree(container, data);*/
+//task
+//decision by js.ru
+/*function createCalendar(id, year, month) {
+    var elem = document.getElementById(id);
+
+    var mon = month - 1; // месяцы в JS идут от 0 до 11, а не от 1 до 12
+    var d = new Date(year, mon);
+
+    var table = '<table><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr>';
+
+    // заполнить первый ряд от понедельника
+    // и до дня, с которого начинается месяц
+    // * * * | 1  2  3  4
+    for (var i = 0; i < getDay(d); i++) {
+        table += '<td></td>';
+    }
+
+    // ячейки календаря с датами
+    while (d.getMonth() == mon) {
+        table += '<td>' + d.getDate() + '</td>';
+
+        if (getDay(d) % 7 == 6) { // вс, последний день - перевод строки
+            table += '</tr><tr>';
+        }
+
+        d.setDate(d.getDate() + 1);
+    }
+
+    // добить таблицу пустыми ячейками, если нужно
+    if (getDay(d) != 0) {
+        for (var i = getDay(d); i < 7; i++) {
+            table += '<td></td>';
+        }
+    }
+
+    // закрыть таблицу
+    table += '</tr></table>';
+
+    // только одно присваивание innerHTML
+    elem.innerHTML = table;
+}
+
+function getDay(date) { // получить номер дня недели, от 0(пн) до 6(вс)
+    var day = date.getDay();
+    if (day == 0) day = 7;
+    return day - 1;
+}
+
+
+
+createCalendar("calendar", 2012, 9)*/
+//task
+//decision by js.ru
+/*var timerId;
 
 function update() {
     var clock = document.getElementById('clock');
@@ -4086,7 +5279,7 @@ button.style.fontSize = '14px';*/
  * @param options.html {string} HTML-текст для показа
 
 function showNotification(options) {
-    
+
     var notification = document.createElement('div');
     notification.className = 'notification';
     if (options.cssText) {
@@ -4117,7 +5310,189 @@ setInterval(function () {
     });
 }, 2000);*/
 //task
+/*    var table = '<table><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr>';
 
+    // заполнить первый ряд от понедельника
+    // и до дня, с которого начинается месяц
+    // * * * | 1  2  3  4
+    for (var i = 0; i < getDay(d); i++) {
+        table += '<td></td>';
+    }
+
+    // ячейки календаря с датами
+    while (d.getMonth() == mon) {
+        table += '<td>' + d.getDate() + '</td>';
+
+        if (getDay(d) % 7 == 6) { // вс, последний день - перевод строки
+            table += '</tr><tr>';
+        }
+
+        d.setDate(d.getDate() + 1);
+    }
+
+    // добить таблицу пустыми ячейками, если нужно
+    if (getDay(d) != 0) {
+        for (var i = getDay(d); i < 7; i++) {
+            table += '<td></td>';
+        }
+    }
+
+    // закрыть таблицу
+    table += '</tr></table>';
+
+    // только одно присваивание innerHTML
+    elem.innerHTML = table;
+}
+
+function getDay(date) { // получить номер дня недели, от 0(пн) до 6(вс)
+    var day = date.getDay();
+    if (day == 0) day = 7;
+    return day - 1;
+}
+
+
+
+createCalendar("calendar", 2012, 9)*!/*/
+//task
+//decision by js.ru
+/*var timerId;
+
+function update() {
+    var clock = document.getElementById('clock');
+
+    var date = new Date();
+
+    var hours = date.getHours();
+    if (hours < 10) hours = '0' + hours;
+    clock.children[0].innerHTML = hours;
+
+    var minutes = date.getMinutes();
+    if (minutes < 10) minutes = '0' + minutes;
+    clock.children[1].innerHTML = minutes;
+
+    var seconds = date.getSeconds();
+    if (seconds < 10) seconds = '0' + seconds;
+    clock.children[2].innerHTML = seconds;
+}
+
+function clockStart() {
+    timerId = setInterval(update, 1000);
+    update();
+}
+
+clockStart();
+/!*
+function clockStop() {
+    clearInterval(timerId);
+    timerId = null;
+}
+*!/*/
+//task
+/*var ul = document.body.children[0];
+
+ul.insertAdjacentHTML("beforeEnd", "<li>3</li><li>4</li><li>5</li>");*/
+/*
+function update() {
+    var clock = document.getElementById('clock');
+
+    var date = new Date();
+
+    var hours = date.getHours();
+    if (hours < 10) hours = '0' + hours;
+    clock.children[0].innerHTML = hours;
+
+    var minutes = date.getMinutes();
+    if (minutes < 10) minutes = '0' + minutes;
+    clock.children[1].innerHTML = minutes;
+
+    var seconds = date.getSeconds();
+    if (seconds < 10) seconds = '0' + seconds;
+    clock.children[2].innerHTML = seconds;
+}
+
+function clockStart() {
+    timerId = setInterval(update, 1000);
+    update();
+}
+
+clockStart();
+/!*
+function clockStop() {
+    clearInterval(timerId);
+    timerId = null;
+}
+*!/*/
+//task
+/*var ul = document.body.children[0];
+
+ul.insertAdjacentHTML("beforeEnd", "<li>3</li><li>4</li><li>5</li>");*/
+//task
+//create button on js
+/*var button = document.createElement('a');
+button.className = 'button';
+button.innerHTML = 'Нажми меня';
+button.href = '/';
+
+document.body.appendChild(button);
+
+//create styles for button
+button.style.cssText='-moz-border-radius: 8px;\n' +
+    '    -webkit-border-radius: 8px;\n' +
+    '    border-radius: 8px;\n' +
+    '    border: 2px groove green;\n' +
+    '    display: block;\n' +
+    '    height: 30px;\n' +
+    '    line-height: 30px;\n' +
+    '    width: 100px;\n' +
+    '    text-decoration: none;\n' +
+    '    text-align: center;\n' +
+    '    color: red;\n' +
+    '    font-weight: bold;';
+button.style.fontSize = '14px';*/
+//task
+/*//decision by js.ru
+*
+ * Показывает уведомление, пропадающее через 1.5 сек
+ *
+ * @param options.top {number} вертикальный отступ, в px
+ * @param options.right {number} правый отступ, в px
+ * @param options.cssText {string} строка стиля
+ * @param options.className {string} CSS-класс
+ * @param options.html {string} HTML-текст для показа
+
+function showNotification(options) {
+
+    var notification = document.createElement('div');
+    notification.className = 'notification';
+    if (options.cssText) {
+        notification.style.cssText = options.cssText;
+    }
+    notification.style.top = (options.top || 0) + 'px'; // can use cssText
+    notification.style.right = (options.right || 0) + 'px'; //can use cssText
+    if (options.className) {
+        notification.classList.add(options.className);
+    }
+
+    notification.innerHTML = options.html;
+    document.body.appendChild(notification);
+
+    setTimeout(function () {
+        document.body.removeChild(notification);
+    }, 1500);
+}
+
+//тест работоспособности
+var i = 0;
+setInterval(function () {
+    showNotification({
+        top: 10,
+        right: 10,
+        html: 'Привет ' + ++i,
+        className: 'welcome'
+    });
+}, 2000);*/
+//task
+//123
 
 
 
