@@ -4213,12 +4213,6 @@ function isObjectEmpty(obj) {
     loginDone: function(result) {
         alert( this.login + (result ? ' вошёл в сайт' : ' ошибка входа') );
     },
-var container = document.getElementById('container');
-createTree(container, data);*/
-//task
-//decision by js.ru
-/*function createCalendar(id, year, month) {
-    var elem = document.getElementById(id);
 
     checkPassword: function() {
         var self = this;
@@ -4232,8 +4226,6 @@ createTree(container, data);*/
         );
     }
 };
-    var mon = month - 1; // месяцы в JS идут от 0 до 11, а не от 1 до 12
-    var d = new Date(year, mon);
 
 var vasya = user;
 user = null;
@@ -5310,8 +5302,7 @@ setInterval(function () {
     });
 }, 2000);*/
 //task
-/*    var table = '<table><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr>';
-
+/*
     // заполнить первый ряд от понедельника
     // и до дня, с которого начинается месяц
     // * * * | 1  2  3  4
@@ -5492,7 +5483,23 @@ setInterval(function () {
     });
 }, 2000);*/
 //task
-//123
+//decision by js.ru
+/*function getDocumentScroll() {
+    var box = elem.getBoundingClientRect();
+
+    var scrollHeight = Math.max(
+        document.body.scrollHeight, document.documentElement.scrollHeight,
+        document.body.offsetHeight, document.documentElement.offsetHeight,
+        document.body.clientHeight, document.documentElement.clientHeight
+    );
+
+    return {
+        top: box.top + pageYOffset,
+        bottom: pageYOffset + document.documentElement.clientHeight,
+        height: scrollHeight
+    };
+}*/
+//task
 
 
 

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="036a6174-0de8-4a13-a006-9eaa02c906f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/studyScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/studyScript.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +20,8 @@
       <file leaf-file-name="studyScript.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/studyScript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="4144" selection-start-line="4144" selection-end-line="4144" />
+            <state relative-caret-position="455">
+              <caret line="5504" lean-forward="true" selection-start-line="5504" selection-end-line="5504" />
             </state>
           </provider>
         </entry>
@@ -30,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/Index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -58,9 +58,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1354" />
-    <option name="y" value="334" />
-    <option name="width" value="573" />
+    <option name="x" value="1026" />
+    <option name="y" value="156" />
+    <option name="width" value="878" />
     <option name="height" value="753" />
   </component>
   <component name="ProjectView">
@@ -106,7 +106,8 @@
       <workItem from="1535358154679" duration="78000" />
       <workItem from="1535725908255" duration="161000" />
       <workItem from="1535726106228" duration="823000" />
-      <workItem from="1535955568756" duration="7755000" />
+      <workItem from="1535955568756" duration="9044000" />
+      <workItem from="1536041921350" duration="1922000" />
     </task>
     <task id="LOCAL-00001" summary="tasks with styles and classes">
       <created>1535726014436</created>
@@ -115,14 +116,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535726014436</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;Index.html&#10;#&#9;studyScript.js&#10;tasks with metrics window and coordinats">
+      <created>1535970042017</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1535970042017</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22735000" />
+    <option name="totallyTimeSpent" value="25946000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1354" y="334" width="573" height="753" extended-state="0" />
+    <frame x="1026" y="156" width="878" height="753" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
@@ -159,6 +167,20 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/studyScript.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93279">
+          <caret line="5487" lean-forward="true" selection-start-line="5487" selection-end-line="5487" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studyScript.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82807">
           <caret line="4871" column="7" lean-forward="true" selection-start-line="4871" selection-start-column="7" selection-end-line="4871" selection-end-column="7" />
         </state>
@@ -181,14 +203,14 @@
     <entry file="file://$PROJECT_DIR$/Index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/studyScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="4144" selection-start-line="4144" selection-end-line="4144" />
+        <state relative-caret-position="455">
+          <caret line="5504" lean-forward="true" selection-start-line="5504" selection-end-line="5504" />
         </state>
       </provider>
     </entry>
