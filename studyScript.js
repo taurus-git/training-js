@@ -5500,6 +5500,22 @@ setInterval(function () {
     };
 }*/
 //task
+/*---------------------------Events---------------------------*/
+//decision by js.ru
+/*document.getElementById('hider').onclick = function () {
+    document.getElementById('text').style.visibility = 'hidden';
+}*/
+//task
+/*function handler() {
+    var button = document.getElementById('hider');
+
+    button.style.visibility = 'hidden';
+}
+hider.addEventListener('click', handler);
+
+//or (decision by js.ru)
+onclick="this.style.display='none'"*/
+//task
 
 
 
