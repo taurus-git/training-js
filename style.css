@@ -8,21 +8,7 @@ body{
             Sans, Droid Sans,
             Helvetica Neue,
             sans-serif;
-        /*scrolling gradient styles start*/
-   /* background: linear-gradient(to bottom, #B721FF, #2AF598, #fec051, #FEE140, #FA709A );
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
-body:before{
-        content:'';
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        z-index: -1;
-        background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #21D4FD 75%);
-        !*scrolling gradient styles end*!
-}*/
 .wrapper{
         margin-top: 5px;
         margin-right: 5%;
@@ -141,3 +127,36 @@ body:before{
 @media only screen and (min-width: 360px) and (max-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3){
     !* стили *!
 }*/
+body {
+    margin: 10px auto;
+    width: 470px;
+}
+
+h3 {
+    margin: 0;
+    padding-bottom: .3em;
+    font-size: 1.1em;
+}
+
+p {
+    margin: 0;
+    padding: 0 0 .5em;
+}
+
+.pane {
+    position: relative;
+    background: #edf5e1;
+    padding: 10px 20px 10px;
+    border-top: solid 2px #c4df9b;
+}
+
+.remove-button {
+    position: absolute;
+    font-size: 110%;
+    color: darkred;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: transparent;
+}

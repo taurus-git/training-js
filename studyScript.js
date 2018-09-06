@@ -5516,6 +5516,26 @@ hider.addEventListener('click', handler);
 //or (decision by js.ru)
 onclick="this.style.display='none'"*/
 //task
+//decision
+/*var menuElem = document.getElementById('sweeties');
+var titleElem = menuElem.querySelector('.title');
 
+titleElem.onclick = function () {
+    menuElem.classList.toggle('open');
+};*/
+//task
+//decisition by js.ru
+/*
+var buttons = document.querySelectorAll('#messages-container .remove-button');
+
+for (var i = 0; i < buttons.length; i++) {
+    var button = buttons[i];
+    
+    button.onclick = function () {
+        var el = this.parentNode;
+        el.parentNode.removeChild(el);
+    };
+}
+*/
 
 
