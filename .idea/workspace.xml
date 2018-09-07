@@ -18,23 +18,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.1">
+    <splitter split-orientation="vertical" split-proportion="0.18859649">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="studyScript.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="studyScript.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/studyScript.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="54">
-                  <caret line="5528" selection-start-line="5527" selection-end-line="5539" />
+                <state relative-caret-position="208">
+                  <caret line="5580" selection-start-line="5579" selection-end-line="5624" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="148" column="13" lean-forward="true" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="13" />
+                <state relative-caret-position="1126">
+                  <caret line="238" column="23" lean-forward="true" selection-start-line="238" selection-start-column="23" selection-end-line="238" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -46,8 +46,8 @@
           <file leaf-file-name="Index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="48">
-                  <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+                <state relative-caret-position="111">
+                  <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -62,8 +62,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/studyScript.js" />
+        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/Index.html" />
       </list>
     </option>
@@ -129,7 +129,8 @@
       <workItem from="1535955568756" duration="9044000" />
       <workItem from="1536041921350" duration="2587000" />
       <workItem from="1536129022475" duration="5091000" />
-      <workItem from="1536214452215" duration="4970000" />
+      <workItem from="1536214452215" duration="5031000" />
+      <workItem from="1536300770274" duration="4611000" />
     </task>
     <task id="LOCAL-00001" summary="tasks with styles and classes">
       <created>1535726014436</created>
@@ -159,11 +160,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536135828885</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="tasks with browser events">
+      <created>1536219967408</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1536219967408</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36672000" />
+    <option name="totallyTimeSpent" value="41344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1394" y="244" width="518" height="814" extended-state="0" />
@@ -200,9 +208,31 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;Index.html&#10;#&#9;studyScript.js&#10;tasks with metrics window and coordinats" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;Index.html&#10;#&#9;studyScript.js&#10;tasks with coordinats" />
     <MESSAGE value="tasks with events" />
-    <option name="LAST_COMMIT_MESSAGE" value="tasks with events" />
+    <MESSAGE value="tasks with browser events" />
+    <option name="LAST_COMMIT_MESSAGE" value="tasks with browser events" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/studyScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93976">
+          <caret line="5528" selection-start-line="5527" selection-end-line="5539" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2516">
+          <caret line="148" column="13" lean-forward="true" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/studyScript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93789">
@@ -266,24 +296,24 @@
     <entry file="file://$PROJECT_DIR$/Index.html" />
     <entry file="file://$PROJECT_DIR$/../../task/111/studyScript.js" />
     <entry file="file://$PROJECT_DIR$/training-js/studyScript.js" />
-    <entry file="file://$PROJECT_DIR$/style.css">
+    <entry file="file://$PROJECT_DIR$/studyScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="148" column="13" lean-forward="true" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="13" />
+        <state relative-caret-position="208">
+          <caret line="5580" selection-start-line="5579" selection-end-line="5624" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/studyScript.js">
+    <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="5528" selection-start-line="5527" selection-end-line="5539" />
+        <state relative-caret-position="1126">
+          <caret line="238" column="23" lean-forward="true" selection-start-line="238" selection-start-column="23" selection-end-line="238" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        <state relative-caret-position="111">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
