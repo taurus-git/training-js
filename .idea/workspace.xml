@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="036a6174-0de8-4a13-a006-9eaa02c906f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/studyScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/studyScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,8 +43,8 @@
           <file leaf-file-name="Index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="111">
-                  <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+                <state relative-caret-position="162">
+                  <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
                 </state>
               </provider>
             </entry>
@@ -77,7 +74,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1394" />
     <option name="y" value="244" />
     <option name="width" value="518" />
@@ -130,7 +127,7 @@
       <workItem from="1536041921350" duration="2587000" />
       <workItem from="1536129022475" duration="5091000" />
       <workItem from="1536214452215" duration="5031000" />
-      <workItem from="1536300770274" duration="4611000" />
+      <workItem from="1536300770274" duration="4675000" />
     </task>
     <task id="LOCAL-00001" summary="tasks with styles and classes">
       <created>1535726014436</created>
@@ -167,15 +164,21 @@
       <option name="project" value="LOCAL" />
       <updated>1536219967408</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="tasks with obtaining event object">
+      <created>1536308415932</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1536308415932</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41344000" />
+    <option name="totallyTimeSpent" value="41408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1394" y="244" width="518" height="814" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -209,7 +212,8 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;Index.html&#10;#&#9;studyScript.js&#10;tasks with coordinats" />
     <MESSAGE value="tasks with events" />
     <MESSAGE value="tasks with browser events" />
-    <option name="LAST_COMMIT_MESSAGE" value="tasks with browser events" />
+    <MESSAGE value="tasks with obtaining event object" />
+    <option name="LAST_COMMIT_MESSAGE" value="tasks with obtaining event object" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/studyScript.js">
@@ -312,8 +316,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state relative-caret-position="162">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
